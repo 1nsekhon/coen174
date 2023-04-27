@@ -11,9 +11,8 @@
 		DCDF334129F9DE93001FCB42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDF334029F9DE93001FCB42 /* ContentView.swift */; };
 		DCDF334329F9DE98001FCB42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCDF334229F9DE98001FCB42 /* Assets.xcassets */; };
 		DCDF334629F9DE98001FCB42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCDF334529F9DE98001FCB42 /* Preview Assets.xcassets */; };
-		DCDF335029F9DE98001FCB42 /* foodRestrictionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDF334F29F9DE98001FCB42 /* foodRestrictionsTests.swift */; };
-		DCDF335A29F9DE98001FCB42 /* foodRestrictionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDF335929F9DE98001FCB42 /* foodRestrictionsUITests.swift */; };
-		DCDF335C29F9DE98001FCB42 /* foodRestrictionsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDF335B29F9DE98001FCB42 /* foodRestrictionsUITestsLaunchTests.swift */; };
+		DCDF33A529FAE471001FCB42 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDF33A429FAE471001FCB42 /* AppViewModel.swift */; };
+		DCDF33A729FAE856001FCB42 /* DataScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDF33A629FAE856001FCB42 /* DataScannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +39,9 @@
 		DCDF334229F9DE98001FCB42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCDF334529F9DE98001FCB42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DCDF334B29F9DE98001FCB42 /* foodRestrictionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = foodRestrictionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCDF334F29F9DE98001FCB42 /* foodRestrictionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodRestrictionsTests.swift; sourceTree = "<group>"; };
 		DCDF335529F9DE98001FCB42 /* foodRestrictionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = foodRestrictionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCDF335929F9DE98001FCB42 /* foodRestrictionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodRestrictionsUITests.swift; sourceTree = "<group>"; };
-		DCDF335B29F9DE98001FCB42 /* foodRestrictionsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodRestrictionsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DCDF33A429FAE471001FCB42 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		DCDF33A629FAE856001FCB42 /* DataScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				DCDF333D29F9DE93001FCB42 /* foodRestrictions */,
-				DCDF334E29F9DE98001FCB42 /* foodRestrictionsTests */,
-				DCDF335829F9DE98001FCB42 /* foodRestrictionsUITests */,
 				DCDF333C29F9DE93001FCB42 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,7 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				DCDF333E29F9DE93001FCB42 /* foodRestrictionsApp.swift */,
+				DCDF33A429FAE471001FCB42 /* AppViewModel.swift */,
 				DCDF334029F9DE93001FCB42 /* ContentView.swift */,
+				DCDF33A629FAE856001FCB42 /* DataScannerView.swift */,
 				DCDF334229F9DE98001FCB42 /* Assets.xcassets */,
 				DCDF334429F9DE98001FCB42 /* Preview Content */,
 			);
@@ -108,23 +106,6 @@
 				DCDF334529F9DE98001FCB42 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		DCDF334E29F9DE98001FCB42 /* foodRestrictionsTests */ = {
-			isa = PBXGroup;
-			children = (
-				DCDF334F29F9DE98001FCB42 /* foodRestrictionsTests.swift */,
-			);
-			path = foodRestrictionsTests;
-			sourceTree = "<group>";
-		};
-		DCDF335829F9DE98001FCB42 /* foodRestrictionsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DCDF335929F9DE98001FCB42 /* foodRestrictionsUITests.swift */,
-				DCDF335B29F9DE98001FCB42 /* foodRestrictionsUITestsLaunchTests.swift */,
-			);
-			path = foodRestrictionsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +240,8 @@
 			files = (
 				DCDF334129F9DE93001FCB42 /* ContentView.swift in Sources */,
 				DCDF333F29F9DE93001FCB42 /* foodRestrictionsApp.swift in Sources */,
+				DCDF33A529FAE471001FCB42 /* AppViewModel.swift in Sources */,
+				DCDF33A729FAE856001FCB42 /* DataScannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +249,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCDF335029F9DE98001FCB42 /* foodRestrictionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +256,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCDF335A29F9DE98001FCB42 /* foodRestrictionsUITests.swift in Sources */,
-				DCDF335C29F9DE98001FCB42 /* foodRestrictionsUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +400,7 @@
 				DEVELOPMENT_TEAM = 4V3NTLJAU3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to scan text.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +430,7 @@
 				DEVELOPMENT_TEAM = 4V3NTLJAU3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to scan text.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
