@@ -36,7 +36,7 @@ final class AppViewModel: ObservableObject {
     
     //Scanning the items
     @Published var recognizedItems: [RecognizedItem] = []
-    @Published var scanType: ScanType = .barcode
+    @Published var scanType: ScanType = .text
     @Published var textContentType: DataScannerViewController.TextContentType?
     @Published var recognizesMultipleItems = true
     

@@ -14,21 +14,14 @@ struct ContentView: View {
     @EnvironmentObject var vm: AppViewModel
     
     private let textContentTypes: [(title: String, textContentType: DataScannerViewController.TextContentType?)] = [
-        ("All", .none),             //the only one required for our system
-        ("URL", .URL),
-        ("Phone", .telephoneNumber),
-        ("Email", .emailAddress),
-        ("Address", .fullStreetAddress),
-        ("Flight Number", .flightNumber),
-        ("Shipment Number", .shipmentTrackingNumber),
-        ("Timeframe", .dateTimeDuration)
+        ("All", .none)
     ]
     
     var body: some View {
         switch vm.dataScannerAccessStatus {
             
         case .scannerAvailable:
-            Text("Scanner is available")
+            mainView
             
         case .cameraNotAvailable:
             Text("Your device doesn't have a camera")
@@ -65,6 +58,7 @@ struct ContentView: View {
                                 
                                 case .text(let text):
                                     Text(text.transcript)
+                                    //Export to txt file here
                                 
                                 @unknown default:
                                     Text("Unknown")
@@ -85,31 +79,8 @@ struct ContentView: View {
     private var headerView: some View {
     
         VStack {
-            HStack {
-                Picker("Scan Type", selection: $vm.scanType) {
-                    Text("Barcode").tag(ScanType.barcode)
-                    Text("Text").tag(ScanType.text)
-                }.pickerStyle(.segmented)
-                
-                Toggle("Scan multiple", isOn: $vm.recognizesMultipleItems)
-            }.padding(.top)
-            
-            if vm.scanType == .text {
-                Picker("Text content type", selection: $vm.textContentType) {
-                    ForEach(textContentTypes, id: \.self.textContentType) { option in
-                        Text(option.title).tag(option.textContentType)
-                    }
-                }.pickerStyle(.segmented)
-            }
-            
             Text(vm.headerText).padding(.top)
         }.padding(.horizontal)
     }
     
 }
-
-/*struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}*/
