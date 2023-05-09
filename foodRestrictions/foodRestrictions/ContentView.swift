@@ -54,7 +54,7 @@ struct ContentView: View {
                         ForEach(vm.recognizedItems) { item in
                             switch item {
                                 case .barcode(let barcode):
-                                    Text(barcode.payloadStringValue ?? "Unknown barcode")
+                                    Text(barcode.payloadStringValue ?? "Unknown barcode") //no longer relevant but ok
                                 
                                 case .text(let text):
                                     Text(text.transcript)
