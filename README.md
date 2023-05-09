@@ -2,10 +2,15 @@
 
 We are working on a Dietary Restriction Helper iOS application
 
+
 **REPOSITORY SETUP**
+
 main - empty at the moment
+
 Vision - SwiftUI code for an iOS app that takes a photo upload input and scans text from there
+
 xcode-megan - SwiftUI code for an iOS app that uses the user camera to scan text in real time and display that text to the screen
+
 backend - Python script that feeds chatGPT a query and results in a data frame
 
 **PRODUCT VISION STATEMENT**
