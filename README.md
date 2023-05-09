@@ -7,7 +7,7 @@ We are working on a Dietary Restriction Helper iOS application
 
 
 
-**REPOSITORY SETUP**
+# REPOSITORY SETUP
 
 main - empty at the moment
 
@@ -22,7 +22,7 @@ backend - Python script that feeds chatGPT a query and results in a data frame
 
 
 
-**PRODUCT VISION STATEMENT**
+# PRODUCT VISION STATEMENT
 FOR: People who have dietary restrictions
 
 WHO: Want a streamlined method to find safe foods
