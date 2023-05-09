@@ -3,7 +3,7 @@
 This is Khushboo Gupta, Will Olson, Nanki Sekhon, and Megan Wiser's project for COEN174.
 
 
-# REPOSITORY SETUP
+# REPOSITORY BRANCHES
 
 main - empty at the moment
 
