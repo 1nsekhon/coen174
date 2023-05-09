@@ -5,7 +5,7 @@ This is Khushboo Gupta, Will Olson, Nanki Sekhon, and Megan Wiser's project for 
 
 # REPOSITORY BRANCHES
 
-main - empty at the moment
+main - README
 
 Vision - SwiftUI code for an iOS app that takes a photo upload input and scans text from there
 
