@@ -64,7 +64,7 @@ struct DataScannerView: UIViewControllerRepresentable {
         
         func dataScanner(_ dataScanner: DataScannerViewController, didTapOn item: RecognizedItem) {
             
-            print("didTapOn \(item)")
+            //print("didTapOn \(item)")
             
         }
         
@@ -74,7 +74,7 @@ struct DataScannerView: UIViewControllerRepresentable {
             
             recognizedItems.append(contentsOf: addedItems)
             
-            print("didAddItems \(addedItems)")
+            //print("didAddItems \(addedItems)")
             
         }
         
@@ -87,13 +87,13 @@ struct DataScannerView: UIViewControllerRepresentable {
                 
             }
             
-            print("didRemovedItems \(removedItems)")
+            //print("didRemovedItems \(removedItems)")
             
         }
         
         func dataScanner(_ dataScanner: DataScannerViewController, becameUnavailableWithError error: DataScannerViewController.ScanningUnavailable) {
             
-            print("became unavailable with error \(error.localizedDescription)")
+            //print("became unavailable with error \(error.localizedDescription)")
             
         }
         

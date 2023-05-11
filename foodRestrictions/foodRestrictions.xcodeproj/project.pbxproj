@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC24BE122A0C65E100C4D68A /* PythonCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24BE112A0C65E100C4D68A /* PythonCodeView.swift */; };
 		DCDF333F29F9DE93001FCB42 /* foodRestrictionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDF333E29F9DE93001FCB42 /* foodRestrictionsApp.swift */; };
 		DCDF334129F9DE93001FCB42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDF334029F9DE93001FCB42 /* ContentView.swift */; };
 		DCDF334329F9DE98001FCB42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCDF334229F9DE98001FCB42 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC24BE112A0C65E100C4D68A /* PythonCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonCodeView.swift; sourceTree = "<group>"; };
 		DCDF333B29F9DE93001FCB42 /* foodRestrictions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foodRestrictions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDF333E29F9DE93001FCB42 /* foodRestrictionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodRestrictionsApp.swift; sourceTree = "<group>"; };
 		DCDF334029F9DE93001FCB42 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				DCDF33A429FAE471001FCB42 /* AppViewModel.swift */,
 				DCED8ED22A0210EA00FC596E /* ExternalFileInteraction.swift */,
 				DCDF334029F9DE93001FCB42 /* ContentView.swift */,
+				DC24BE112A0C65E100C4D68A /* PythonCodeView.swift */,
 				DCDF33A629FAE856001FCB42 /* DataScannerView.swift */,
 				DCDF334229F9DE98001FCB42 /* Assets.xcassets */,
 				DCDF334429F9DE98001FCB42 /* Preview Content */,
@@ -242,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCED8ED32A0210EA00FC596E /* ExternalFileInteraction.swift in Sources */,
+				DC24BE122A0C65E100C4D68A /* PythonCodeView.swift in Sources */,
 				DCDF334129F9DE93001FCB42 /* ContentView.swift in Sources */,
 				DCDF333F29F9DE93001FCB42 /* foodRestrictionsApp.swift in Sources */,
 				DCDF33A529FAE471001FCB42 /* AppViewModel.swift in Sources */,
