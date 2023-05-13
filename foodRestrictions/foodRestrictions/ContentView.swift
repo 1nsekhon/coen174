@@ -38,6 +38,13 @@ struct ContentView: View {
             Text("Requesting camera access")
             
         }
+        
+        //View Switcher
+        if doneScanning {
+            PythonCodeView()
+        } else {
+            ContentView()
+        }
     }
     
     private var mainView: some View {
@@ -72,6 +79,7 @@ struct ContentView: View {
                 //Export to txt file here
                 Button("Accept Scan"){
                     txt(items: vm.recognizedItems)
+                    doneScanning = true
                 }.buttonStyle(.borderedProminent)
             }
         }
@@ -131,13 +139,5 @@ struct ContentView: View {
         }
         
         print("Write is done")
-    }
-    
-    var viewSwitcher: some View {
-        return Group {
-            if doneScanning {
-                PythonCodeView()
-            }
-        }
     }
 }
