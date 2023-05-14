@@ -38,13 +38,6 @@ struct ContentView: View {
             Text("Requesting camera access")
             
         }
-        
-        //View Switcher
-        if doneScanning {
-            PythonCodeView()
-        } else {
-            ContentView()
-        }
     }
     
     private var mainView: some View {
@@ -77,10 +70,11 @@ struct ContentView: View {
                 }
                 
                 //Export to txt file here
-                Button("Accept Scan"){
+                NavigationLink(destination: PythonCodeView()) {
+                    Text("Accept Scan")
+                }.simultaneousGesture(TapGesture().onEnded {
                     txt(items: vm.recognizedItems)
-                    doneScanning = true
-                }.buttonStyle(.borderedProminent)
+                })
             }
         }
         

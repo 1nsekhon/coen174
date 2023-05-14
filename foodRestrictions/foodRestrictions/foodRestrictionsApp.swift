@@ -14,11 +14,13 @@ struct foodRestrictionsApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(vm)
-                .task {
-                    await vm.requestDataScannerAccessStatus()           //First time the user launches the app, asks for camera access
-                }
+            NavigationStack {
+                ContentView()
+                    .environmentObject(vm)
+                    .task {
+                        await vm.requestDataScannerAccessStatus()           //First time the user launches the app, asks for camera access
+                    }
+            }
         }
     }
 }

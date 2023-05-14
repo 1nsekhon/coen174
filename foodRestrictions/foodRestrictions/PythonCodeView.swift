@@ -9,12 +9,12 @@ import SwiftUI
 
 struct PythonCodeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Why are you like this")
     }
 }
 
-struct PythonCodeView_Previews: PreviewProvider {
+/*struct PythonCodeView_Previews: PreviewProvider {
     static var previews: some View {
         PythonCodeView()
     }
-}
+}*/
