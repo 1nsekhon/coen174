@@ -9,10 +9,19 @@ import SwiftUI
 import Foundation
 import TabularData
 
-struct OpenAiInteraction: View {
+
+
+
+class OpenAiInteraction: ObservableObject {
     @State private var menuText: String = ""
     @State private var menuDF: DataFrame?
     
+    struct Response: Hashable, Codable {
+        let name: String
+    }
+    
+    @Published var responses: [Response] = []
+
     var body: some View {
         VStack {
             Text("Menu Text:")
@@ -21,7 +30,7 @@ struct OpenAiInteraction: View {
                 .padding()
             
             Button(action: {
-                createMenuDataFrame()
+                self.createMenuDataFrame()
             }, label: {
                 Text("call api")
             })
@@ -36,8 +45,7 @@ struct OpenAiInteraction: View {
     func createMenuDataFrame() {
         let question = "Make a table(table has 5 columns: food item, description of item, if it contains meat, if it contains gluten, if it contains fruit) for the following menu: \(menuText)"
         
-        var r: String
-        var e: Error
+        var r = ""
         
         askQuestion(prompt: question) { (response, error) in
             guard let response = response else {
@@ -46,7 +54,6 @@ struct OpenAiInteraction: View {
             }
             
             r = response
-            e = error!
         }
         
         let menuList = r.trimmingCharacters(in: .whitespacesAndNewlines).components(separatedBy: "\n")
@@ -87,7 +94,10 @@ struct OpenAiInteraction: View {
     }
     
     func askQuestion(prompt: String, completion: @escaping (String?, Error?) -> Void) {
-        let apiKey = "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"
+        let willapiKey = "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"
+        let meganapiKey = "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"
+        
+        let apiKey = meganapiKey
         let urlString = "https://api.openai.com/v1/engines/davinci/completions"
         let url = URL(string: urlString)!
         var request = URLRequest(url: url)
@@ -102,15 +112,16 @@ struct OpenAiInteraction: View {
             "temperature": 0.5
         ] as [String : Any]
         
-        do {
+        /*do {
             request.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
         } catch {
             completion(nil, error)
             return
-        }
+        }*/
         
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            guard let data = data else {
+            
+            guard let data = data, error == nil else {
                 completion(nil, error)
                 return
             }
@@ -118,15 +129,15 @@ struct OpenAiInteraction: View {
             
             //Convert to JSON
             do {
-                let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
-                if let choices = json?["choices"] as? [[String: Any]] {
-                    let choice = try JSONDecoder().decode(DataFrame, from: )
-                    
+                let json = try JSONDecoder().decode([Response].self, from: data)
+                DispatchQueue.main.async {
+                    self.responses = self.responses
                 }
-            }
-            catch {
+            } catch {
                 print(error)
             }
         }
+        
+        task.resume()
     }
 }

@@ -11,6 +11,7 @@
 		DC24BE422A10626900C4D68A /* firstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24BE412A10626900C4D68A /* firstPage.swift */; };
 		DC24BE442A11876A00C4D68A /* TranslationFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24BE432A11876A00C4D68A /* TranslationFile.swift */; };
 		DC24BE462A118BC500C4D68A /* AttemptTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24BE452A118BC500C4D68A /* AttemptTwo.swift */; };
+		DC24BE642A11CF6000C4D68A /* SimpleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24BE632A11CF6000C4D68A /* SimpleAPI.swift */; };
 		DCDF333F29F9DE93001FCB42 /* foodRestrictionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDF333E29F9DE93001FCB42 /* foodRestrictionsApp.swift */; };
 		DCDF334129F9DE93001FCB42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDF334029F9DE93001FCB42 /* ContentView.swift */; };
 		DCDF334329F9DE98001FCB42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCDF334229F9DE98001FCB42 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		DC24BE412A10626900C4D68A /* firstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstPage.swift; sourceTree = "<group>"; };
 		DC24BE432A11876A00C4D68A /* TranslationFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationFile.swift; sourceTree = "<group>"; };
 		DC24BE452A118BC500C4D68A /* AttemptTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttemptTwo.swift; sourceTree = "<group>"; };
+		DC24BE632A11CF6000C4D68A /* SimpleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAPI.swift; sourceTree = "<group>"; };
 		DCDF333B29F9DE93001FCB42 /* foodRestrictions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foodRestrictions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDF333E29F9DE93001FCB42 /* foodRestrictionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodRestrictionsApp.swift; sourceTree = "<group>"; };
 		DCDF334029F9DE93001FCB42 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				DC24BE112A0C65E100C4D68A /* PythonCodeView.swift */,
 				DC24BE432A11876A00C4D68A /* TranslationFile.swift */,
 				DC24BE452A118BC500C4D68A /* AttemptTwo.swift */,
+				DC24BE632A11CF6000C4D68A /* SimpleAPI.swift */,
 				DCDF33A629FAE856001FCB42 /* DataScannerView.swift */,
 				DCDF334229F9DE98001FCB42 /* Assets.xcassets */,
 				DCDF334429F9DE98001FCB42 /* Preview Content */,
@@ -261,6 +264,7 @@
 				DCDF333F29F9DE93001FCB42 /* foodRestrictionsApp.swift in Sources */,
 				DCDF33A529FAE471001FCB42 /* AppViewModel.swift in Sources */,
 				DCDF33A729FAE856001FCB42 /* DataScannerView.swift in Sources */,
+				DC24BE642A11CF6000C4D68A /* SimpleAPI.swift in Sources */,
 				DC24BE442A11876A00C4D68A /* TranslationFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
