@@ -6,10 +6,32 @@
 //
 
 import SwiftUI
+import TabularData
 
 struct PythonCodeView: View {
+    @StateObject var apiHappenings = OpenAiInteraction()
+    
+    @State private var menuText: String = ""
+    @State private var menuDF: DataFrame?
+    
     var body: some View {
-        Text("Why are you like this")
+        VStack {
+            Text("Menu Text:")
+            TextField("Enter menu text", text: $menuText)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+            
+            Button(action: {
+                apiHappenings.createMenuDataFrame()
+            }, label: {
+                Text("call api")
+            })
+            
+            if let df = menuDF {
+                Text(df.description)
+            }
+        }
+        .padding()
     }
 }
 

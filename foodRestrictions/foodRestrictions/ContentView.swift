@@ -13,6 +13,8 @@ struct ContentView: View {
     
     @EnvironmentObject var vm: AppViewModel
     
+    @StateObject var apiHappenings = OpenAiInteraction()
+    
     @State var doneScanning = false
     
     private let textContentTypes: [(title: String, textContentType: DataScannerViewController.TextContentType?)] = [

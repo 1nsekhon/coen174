@@ -21,26 +21,6 @@ class OpenAiInteraction: ObservableObject {
     }
     
     @Published var responses: [Response] = []
-
-    var body: some View {
-        VStack {
-            Text("Menu Text:")
-            TextField("Enter menu text", text: $menuText)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-            
-            Button(action: {
-                self.createMenuDataFrame()
-            }, label: {
-                Text("call api")
-            })
-            
-            if let df = menuDF {
-                Text(df.description)
-            }
-        }
-        .padding()
-    }
     
     func createMenuDataFrame() {
         let question = "Make a table(table has 5 columns: food item, description of item, if it contains meat, if it contains gluten, if it contains fruit) for the following menu: \(menuText)"
