@@ -5,7 +5,7 @@
 //  Created by Megan Wiser on 5/14/23.
 //
 
-import Foundation
+/*import Foundation
 
 // Function to ask a question using OpenAI API
 func askQuestion(prompt: String, completion: @escaping (String?, Error?) -> Void) {
@@ -53,21 +53,84 @@ func askQuestion(prompt: String, completion: @escaping (String?, Error?) -> Void
 }
 
 
+
+var readRestrictionString = ""
+var readMenuString = ""
+
+
+
 // Ask for menu text
-func inputTxt(){
+func selectedRestrictionText(){
     
+    //Set up filepath
+    let fileName = "Restriction"
+    let DocumentDirURL = try! FileManager.default.url(
+        for: .documentDirectory,
+        in: .userDomainMask,
+        appropriateFor: nil, create: true)
+    let fileURL = DocumentDirURL.appending(component: fileName).appendingPathExtension("txt")
+    
+    print("File Path: \(fileURL.path)")
+    
+    
+    
+    //Read File
+    do{
+        readRestrictionString = try String(contentsOf: fileURL)
+    }catch let error as NSError{
+        print("Failed to read file")
+        print(error)
+    }
+    
+    print("Contents of the file: \(readRestrictionString)")
+    
+    readRestrictionString = "if it contains gluten, if it contains meat, if it contains fruit"
 }
+
+
+
+// Ask for menu text
+func scannedMenuText(){
+    
+    //Set up filepath
+    let fileName = "Menu"
+    let DocumentDirURL = try! FileManager.default.url(
+        for: .documentDirectory,
+        in: .userDomainMask,
+        appropriateFor: nil, create: true)
+    let fileURL = DocumentDirURL.appending(component: fileName).appendingPathExtension("txt")
+    
+    print("File Path: \(fileURL.path)")
+    
+    
+    
+    //Read File
+    do{
+        readMenuString = try String(contentsOf: fileURL)
+    }catch let error as NSError{
+        print("Failed to read file")
+        print(error)
+    }
+    
+    print("Contents of the file: \(readMenuString)")
+}
+
+
+
+//Old Code
 /*print("menu text?")
 guard let txtOfMenu = readLine() else {
     print("Invalid input")
     exit(0)
 }*/
 
+
+
 // Create the question string to feed to Chat GPT
-let question = "Make a table(table has 5 columns: food item, description of item, if it contains meat, if it contains gluten, if it contains fruit) for the following menu: " + txtOfMenu
+let question = "Make a table(table has 5 columns: food item, description of item, " + readRestrictionString + ") for the following menu: " + readMenuString
 
 // Ask the question and get the response
-askQuestion(prompt: question) { (response, error) in
+func askQuestion(prompt: question) { (response, error;); in
     guard let response = response else {
         print("Error: \(error?.localizedDescription ?? "Unknown error")")
         return
@@ -93,6 +156,7 @@ askQuestion(prompt: question) { (response, error) in
     
     // Convert to Swift's Dictionary representation
     var menuTable: [[String: String]] = []
+    
     for row in menuData {
         var rowData: [String: String] = [:]
         for (index, value) in row.enumerated() {
@@ -102,4 +166,4 @@ askQuestion(prompt: question) { (response, error) in
         menuTable.append(rowData)
     }
     
-    //
+}*/
