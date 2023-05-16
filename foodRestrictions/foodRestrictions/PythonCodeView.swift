@@ -21,11 +21,17 @@ struct PythonCodeView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             
-            Button(action: {
+            NavigationLink(destination: doneView()){
+                Text("call api")
+            }.simultaneousGesture(TapGesture().onEnded {
+                apiHappenings.createMenuDataFrame()
+            })
+            
+            /*Button(action: {
                 apiHappenings.createMenuDataFrame()
             }, label: {
                 Text("call api")
-            })
+            })*/
             
             if let df = menuDF {
                 Text(df.description)
@@ -34,6 +40,14 @@ struct PythonCodeView: View {
         .padding()
     }
 }
+
+struct doneView: View {
+    var body: some View {
+        Text("api call is done")
+    }
+}
+
+
 
 /*struct PythonCodeView_Previews: PreviewProvider {
     static var previews: some View {
