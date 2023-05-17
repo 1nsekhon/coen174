@@ -13,7 +13,9 @@ struct ContentView: View {
     
     @EnvironmentObject var vm: AppViewModel
     
-    @StateObject var apiHappenings = OpenAiInteraction()
+    //var menuText: String
+    
+    //@StateObject var apiHappenings = OpenAiInteraction()
     
     @State var doneScanning = false
     
@@ -72,10 +74,10 @@ struct ContentView: View {
                 }
                 
                 //Export to txt file here
-                NavigationLink(destination: PythonCodeView()) {
+                NavigationLink(destination: apiCall()) {
                     Text("Accept Scan")
                 }.simultaneousGesture(TapGesture().onEnded {
-                    txt(items: vm.recognizedItems)
+                    condenseString(items: vm.recognizedItems)
                 })
             }
         }
@@ -92,7 +94,32 @@ struct ContentView: View {
         }.padding(.horizontal)
     }
     
-    func txt(items: [RecognizedItem]){
+    func condenseString(items: [RecognizedItem]) -> String{
+        //Translate recognized items into string to be written
+        var toWrite = ""
+        var b = ""
+        var d = ""
+        
+        for item in vm.recognizedItems {
+            switch item {
+                case .barcode(let barcode):
+                    b = barcode.payloadStringValue ?? "barcode didn't work but isn't supposed to anyways"
+                    
+                case .text(let text):
+                    toWrite = toWrite + " " + text.transcript
+                    
+                @unknown default:
+                    d = "wrong"
+            }
+        }
+    
+        print("Condensed")
+        
+        return toWrite
+    }
+    
+    
+    /*func txt(items: [RecognizedItem]){
         //Translate recognized items into string to be written
         var toWrite = ""
         var b = ""
@@ -135,5 +162,5 @@ struct ContentView: View {
         }
         
         print("Write is done")
-    }
+    }*/
 }

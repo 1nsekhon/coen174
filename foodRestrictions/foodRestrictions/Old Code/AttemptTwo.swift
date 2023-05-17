@@ -4,24 +4,28 @@
 //
 //  Created by Megan Wiser on 5/14/23.
 //
+// OLD CODE
 
-import SwiftUI
-import Foundation
-import TabularData
+//import SwiftUI
+//import Foundation
+//import TabularData
 
-
-
-
-class OpenAiInteraction: ObservableObject {
+/*class OpenAiInteraction: ObservableObject {
+    //menu text input, menu dataframe output
     @State private var menuText: String = ""
     @State private var menuDF: DataFrame?
     
+    //individual response
     struct Response: Hashable, Codable {
-        let name: String
+        let name: String //dataframe
     }
     
+    //catch all responses (multiple?)
     @Published var responses: [Response] = []
     
+    
+    
+    //Create the menu data frame
     func createMenuDataFrame() {
         let question = "Make a table(table has 5 columns: food item, description of item, if it contains meat, if it contains gluten, if it contains fruit) for the following menu: \(menuText)"
         
@@ -36,6 +40,8 @@ class OpenAiInteraction: ObservableObject {
             r = response
         }
         
+        
+        //formatting for dataframe
         let menuList = r.trimmingCharacters(in: .whitespacesAndNewlines).components(separatedBy: "\n")
         let menuData = menuList.map { $0.components(separatedBy: ",") }
         let menuColumns = menuData[0]
@@ -63,14 +69,7 @@ class OpenAiInteraction: ObservableObject {
             menuTable.append(rowData)
         }
         
-        
-        /*var col: Column <AnyColumn>
-         col = Column(menuColumns)
-         
-         menuDF = DataFrame(columns: col)
-         //menuDF = DataFrame(columns: menuColumns)
-         //menuDF = DataFrame(columns: menuColumns, data: menuTable)*/
-        //}
+        //end of dataframe formatting
     }
     
     func askQuestion(prompt: String, completion: @escaping (String?, Error?) -> Void) {
@@ -120,4 +119,4 @@ class OpenAiInteraction: ObservableObject {
         
         task.resume()
     }
-}
+}*/

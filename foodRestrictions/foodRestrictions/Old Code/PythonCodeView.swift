@@ -4,38 +4,39 @@
 //
 //  Created by Megan Wiser on 5/10/23.
 //
+// OLD CODE
 
-import SwiftUI
+/*import SwiftUI
 import TabularData
 
 private var restriction: String = ""
-private var menu: String = ""
+private var menu: String = ""*/
 
-struct PythonCodeView: View {
+/*struct PythonCodeView: View {
     @StateObject var apiHappenings = OpenAiInteraction()
     
     @State private var menuText: String = ""
     @State private var menuDF: DataFrame?
     
     var body: some View {
-        VStack {
+        /*VStack {
             let _ = txtReads(fileName: "Restriction")
             let _ = txtReads(fileName: "Menu")
             
             //call api
-            let _ = ViewController()
+            let _ = ViewController()*/
         }
         .padding()
     }
-}
+}*/
 
-struct doneView: View {
+/*struct doneView: View {
     var body: some View {
         Text("api call is done")
     }
-}
+}*/
 
-func txtReads(fileName: String){
+/*func txtReads(fileName: String){
     
     //Set up filepath
     let DocumentDirURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
@@ -62,4 +63,4 @@ func txtReads(fileName: String){
     } else {
         menu = readString
     }
-}
+}*/

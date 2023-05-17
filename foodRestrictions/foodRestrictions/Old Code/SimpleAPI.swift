@@ -7,8 +7,9 @@
 //
 // This is the actual API interaction
 //
+// OLD CODE
 
-import SwiftUI
+/*import SwiftUI
 
 struct Course: Hashable, Codable {
     let name: String
@@ -42,4 +43,4 @@ class APIHappenings: ObservableObject {
         
         task.resume()
     }
-}
+}*/
