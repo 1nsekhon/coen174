@@ -18,7 +18,7 @@ struct foodRestrictionsApp: App {
                 ContentView()
                     .environmentObject(vm)
                     .task {
-                        await vm.requestDataScannerAccessStatus()           //First time the user launches the app, asks for camera access
+                        //await vm.requestDataScannerAccessStatus()           //First time the user launches the app, asks for camera access
                     }
             }
         }
