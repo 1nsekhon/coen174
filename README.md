@@ -7,8 +7,9 @@ The Allergen Detector is a project developed by Khushboo Gupta, Will Olson, Nank
 Prerequisites
 Ensure that you have the following prerequisites installed on your machine:
 
-Xcode (for iOS app development)
-Python 3.x
+Xcode (Version 14.3)
+iOS (16.2)
+Swift (5)
 
 # Repository Branches
 The Allergen Detector project consists of several branches in the repository. Each branch serves a different purpose. Here is a description of the available branches:
