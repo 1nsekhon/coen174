@@ -8,7 +8,7 @@ Prerequisites
 Ensure that you have the following prerequisites installed on your machine:
 
 Xcode (Version 14.3)
-iOS (16.2)
+iOS (16.2), with Developer Mode turned on
 Swift (5)
 
 # Repository Branches
