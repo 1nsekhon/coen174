@@ -8,6 +8,9 @@
 import SwiftUI
 import TabularData
 
+private var restriction: String = ""
+private var menu: String = ""
+
 struct PythonCodeView: View {
     @StateObject var apiHappenings = OpenAiInteraction()
     
@@ -16,26 +19,11 @@ struct PythonCodeView: View {
     
     var body: some View {
         VStack {
-            Text("Menu Text:")
-            TextField("Enter menu text", text: $menuText)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
+            let _ = txtReads(fileName: "Restriction")
+            let _ = txtReads(fileName: "Menu")
             
-            NavigationLink(destination: doneView()){
-                Text("call api")
-            }.simultaneousGesture(TapGesture().onEnded {
-                apiHappenings.createMenuDataFrame()
-            })
-            
-            /*Button(action: {
-                apiHappenings.createMenuDataFrame()
-            }, label: {
-                Text("call api")
-            })*/
-            
-            if let df = menuDF {
-                Text(df.description)
-            }
+            //call api
+            let _ = ViewController()
         }
         .padding()
     }
@@ -47,10 +35,31 @@ struct doneView: View {
     }
 }
 
-
-
-/*struct PythonCodeView_Previews: PreviewProvider {
-    static var previews: some View {
-        PythonCodeView()
+func txtReads(fileName: String){
+    
+    //Set up filepath
+    let DocumentDirURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+    let fileURL = DocumentDirURL.appending(component: fileName).appendingPathExtension("txt")
+    
+    print("File Path: \(fileURL.path)")
+    
+    
+    
+    //Read what was previously in the file
+    var readString = ""
+    
+    do{
+        readString = try String(contentsOf: fileURL)
+    }catch let error as NSError{
+        print("Failed to read file")
+        print(error)
     }
-}*/
+    
+    print("Contents of the file: \(readString)")
+    
+    if(fileName == "Restriction"){
+        restriction = readString
+    } else {
+        menu = readString
+    }
+}
