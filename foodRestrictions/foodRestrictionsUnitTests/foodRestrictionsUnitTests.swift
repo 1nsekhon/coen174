@@ -17,6 +17,7 @@ class foodRestrictionsUnitTests: XCTestCase {
         // Put setup code here. This method is called before the invocation of each test method in the class.
      try super.setUpWithError()
     sut = String()
+        print("smoke test")
     }
 
     
