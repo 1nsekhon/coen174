@@ -35,31 +35,63 @@ struct doneView: View {
     }
 }
 
-func txtReads(fileName: String){
-    
-    //Set up filepath
-    let DocumentDirURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
-    let fileURL = DocumentDirURL.appending(component: fileName).appendingPathExtension("txt")
-    
-    print("File Path: \(fileURL.path)")
-    
-    
-    
-    //Read what was previously in the file
-    var readString = ""
-    
-    do{
-        readString = try String(contentsOf: fileURL)
-    }catch let error as NSError{
-        print("Failed to read file")
-        print(error)
+
+    func txtReads(fileName: String){
+        
+        //Set up filepath
+        let DocumentDirURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+        let fileURL = DocumentDirURL.appending(component: fileName).appendingPathExtension("txt")
+        
+        print("File Path: \(fileURL.path)")
+        
+        
+        
+        //Read what was previously in the file
+        var readString = ""
+        
+        do{
+            readString = try String(contentsOf: fileURL)
+        }catch let error as NSError{
+            print("Failed to read file")
+            print(error)
+        }
+        
+        print("Contents of the file: \(readString)")
+        
+        if(fileName == "Restriction"){
+            restriction = readString
+        } else {
+            menu = readString
+        }
     }
-    
-    print("Contents of the file: \(readString)")
-    
-    if(fileName == "Restriction"){
-        restriction = readString
-    } else {
-        menu = readString
+class textReads {
+    func txtReads(fileName: String) -> String{
+        
+        //Set up filepath
+        let DocumentDirURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+        let fileURL = DocumentDirURL.appending(component: fileName).appendingPathExtension("txt")
+        
+        print("File Path: \(fileURL.path)")
+        
+        
+        
+        //Read what was previously in the file
+        var readString = ""
+        
+        do{
+            readString = try String(contentsOf: fileURL)
+        }catch let error as NSError{
+            print("Failed to read file")
+            print(error)
+        }
+        
+        print("Contents of the file: \(readString)")
+        
+        if(fileName == "Restriction"){
+            restriction = readString
+        } else {
+            menu = readString
+        }
+        return readString
     }
 }

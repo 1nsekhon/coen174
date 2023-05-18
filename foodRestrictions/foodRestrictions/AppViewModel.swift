@@ -71,7 +71,7 @@ final class AppViewModel: ObservableObject {
     }
     
     //Is the scanner available and if it is, can we use it?
-    func requestDataScannerAccessStatus() async {
+    func requestDataScannerAccessStatus() async{
         
         guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
             
@@ -100,7 +100,7 @@ final class AppViewModel: ObservableObject {
         default: break
         
         }
-        
+                
     }
     
 }
