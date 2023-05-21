@@ -19,13 +19,14 @@ func sendOpenAIRequest(prompt: String, completion: @escaping (Result<String, Err
     ]
     
     let parameters: [String: Any] = [
+        "model": "text-davinci-003",
         "prompt": prompt,
         "max_tokens": 1024,
         "n": 1,
-        "temperature": 0.2
+        "temperature": 0.1
     ]
     
-    AF.request("https://api.openai.com/v1/engines/davinci/completions", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
+    AF.request("https://api.openai.com/v1/completions", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
         .validate()
         .responseJSON { response in
             switch response.result {
@@ -44,51 +45,27 @@ func sendOpenAIRequest(prompt: String, completion: @escaping (Result<String, Err
 }
 
 // Example menu text
-let menuText = "bread, pork"
+let menuText = "Lion King (Baked) California roll topped with salmon, spicy mayo, unagi sauce, tobiko, and green onion."
 
 // Send request to OpenAI API
-let prompt = "Do the following menu items contain meat? Answer in the form of: \"item title, item description, meat present yes or no, gluten present yes or no, fruit present yes or no\""
-let question = prompt + "\n" + menuText
+let question = "Make a JSON table(table has 5 columns: food item, description of item, if it contains meat, if it contains gluten, if it contains fruit) for only the following food items: " + menuText + ". Do not add any more food items."
 
-//
-
-
-/*struct apiCall: View {
-    var body: some View {
-        var str = ""
-        let _ = sendOpenAIRequest(prompt: question) { result in
-            switch result {
-            case .success(let response):
-                // Process the OpenAI API response here
-                //?
-                
-                // Parse response to extract menu items
-                let menuItems = response.trimmingCharacters(in: .whitespacesAndNewlines).components(separatedBy: "\n")
-                
-                // Filter menu items that don't contain meat
-                let menuItemsWithoutMeat = menuItems.filter { !$0.contains("Yes") }
-                
-                // Print menu items without meat
-                print("Menu Items Without Meat:")
-                for item in menuItemsWithoutMeat {
-                    print(item)
-                    str = str + ", " + item
-                }
-                
-            case .failure(let error):
-                print("Error: \(error)")
-            }
-        }
-        
-        Text(str)
-        Text("end of method")
+struct responseItem: Decodable {
+    private enum CodingKeys : String, CodingKey {
+        case foodItem = "Food Item"
+        case description = "Description"
+        case containsMeat = "Contains Meat"
+        case containsGluten = "Contains Gluten"
+        case containsFruit = "Contains Fruit"
     }
-}*/
+    let foodItem: String
+    let description: String
+    let containsMeat: String
+    let containsGluten: String
+    let containsFruit: String
+}
 
 
-
-
-//chat gpt fix
 struct apiCall: View {
     @State private var str = ""
     
@@ -97,31 +74,28 @@ struct apiCall: View {
             Text(str)
         }
         .onAppear {
-            let menuText = "bread, chicken."
-            let prompt = "Please generate an array out of only the menu items that I give you, with the following format:\nFood Item, Contains Meat, Contains Gluten, Contains Fruit\n\nBread, No, Yes, No\nPork, Yes, No, No"
-            let question = prompt + "\n\nHere are the menu items: " + menuText
-            
             sendOpenAIRequest(prompt: question) { result in
                 switch result {
                 case .success(let response):
                     // Process the OpenAI API response here
-                    //?
                     print("question: \n" + question + "\n")
+                    
                     print("Response, unparsed: ")
                     print(response)
                     print("\n\n\n")
                     
-                    // Parse response to extract menu items
-                    let menuItems = response.trimmingCharacters(in: .whitespacesAndNewlines).components(separatedBy: "\n")
+                    let json = response.data(using: .utf8)!
+                    let decoder = JSONDecoder()
                     
-                    // Filter menu items that don't contain meat
-                    let menuItemsWithoutMeat = menuItems.filter { !$0.contains("Yes") }
+
+
+                    let menuItems: [responseItem] = try! decoder.decode([responseItem].self, from: json)
+                    print( menuItems.count)
                     
-                    // Print menu items without meat
-                    print("Menu Items Without Meat:")
-                    for item in menuItemsWithoutMeat {
-                        print(item)
-                        str = str + ", " + item
+                    for item in menuItems {
+                        if item.containsMeat.caseInsensitiveCompare("no") == .orderedSame {
+                            str = str + item.foodItem + ", "
+                        }
                     }
                     
                 case .failure(let error):
