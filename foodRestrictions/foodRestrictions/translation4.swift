@@ -9,7 +9,6 @@ import SwiftUI
 import Alamofire
 import Foundation
 
-
 let apiKey = "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"
 
 func sendOpenAIRequest(prompt: String, completion: @escaping (Result<String, Error>) -> Void) {
@@ -45,7 +44,7 @@ func sendOpenAIRequest(prompt: String, completion: @escaping (Result<String, Err
 }
 
 // Example menu text
-let menuText = "Lion King (Baked) California roll topped with salmon, spicy mayo, unagi sauce, tobiko, and green onion."
+let menuText = menuTxt
 
 // Send request to OpenAI API
 let question = "Make a JSON table(table has 5 columns: food item, description of item, if it contains meat, if it contains gluten, if it contains fruit) for only the following food items: " + menuText + ". Do not add any more food items."
@@ -92,9 +91,33 @@ struct apiCall: View {
                     let menuItems: [responseItem] = try! decoder.decode([responseItem].self, from: json)
                     print( menuItems.count)
                     
+                    var counting = 0
+                    
                     for item in menuItems {
-                        if item.containsMeat.caseInsensitiveCompare("no") == .orderedSame {
-                            str = str + item.foodItem + ", "
+                        if rstrTxt.caseInsensitiveCompare("meat") == .orderedSame {
+                            if item.containsMeat.caseInsensitiveCompare("no") == .orderedSame {
+                                str = str + item.foodItem + ", "
+                            }
+                        }
+                        
+                        if rstrTxt.caseInsensitiveCompare("gluten") == .orderedSame {
+                            if item.containsGluten.caseInsensitiveCompare("no") == .orderedSame {
+                                str = str + item.foodItem + ", "
+                            }
+                        }
+                        
+                        if rstrTxt.caseInsensitiveCompare("fruit") == .orderedSame {
+                            if item.containsFruit.caseInsensitiveCompare("no") == .orderedSame {
+                                str = str + item.foodItem + ", "
+                            }
+                        }
+                        
+                        counting = counting + 1
+                    }
+                    
+                    if counting == menuItems.count {
+                        if str.caseInsensitiveCompare("") == .orderedSame {
+                            str = "No Safe Menu Items Found :("
                         }
                     }
                     

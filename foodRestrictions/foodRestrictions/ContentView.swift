@@ -73,27 +73,25 @@ struct ContentView: View {
         }.padding(.horizontal)
     }
     
-    func condenseString(items: [RecognizedItem]) -> String{
+    func condenseString(items: [RecognizedItem]){
         //Translate recognized items into string to be written
         var toWrite = ""
-        var b = ""
-        var d = ""
         
         for item in vm.recognizedItems {
             switch item {
                 case .barcode(let barcode):
-                    b = barcode.payloadStringValue ?? "barcode didn't work but isn't supposed to anyways"
+                    var _ = barcode.payloadStringValue ?? "barcode didn't work but isn't supposed to anyways"
                     
                 case .text(let text):
                     toWrite = toWrite + " " + text.transcript
                     
                 @unknown default:
-                    d = "wrong"
+                    var _ = "wrong"
             }
         }
     
         print("Condensed")
         
-        return toWrite
+        menuTxt = toWrite
     }
 }

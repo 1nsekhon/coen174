@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+public var rstrTxt = ""
+public var menuTxt = ""
+
 @main
 struct foodRestrictionsApp: App {
     

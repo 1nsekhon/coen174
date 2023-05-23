@@ -18,26 +18,28 @@ struct restrictionSelection: View {
         case .scannerAvailable:
             Text("Select your restrictions")
             
-            var a = ""
-            
             VStack{
                 HStack{
-                    Button("No Meat") {
-                        a = "a"
-                        print(a)
-                    }
-                    Button("No Gluten") {
-                        a = "b"
-                        print(a)
-                    }
-                    Button("No Fruit") {
-                        a = "c"
-                        print(a)
-                    }
-                }
-                
-                NavigationLink(destination: ContentView().environmentObject(vm)) {
-                    Text("Move to Scan")
+                    NavigationLink(destination: ContentView().environmentObject(vm)) {
+                        Text("No Meat")
+                    }.simultaneousGesture(TapGesture().onEnded {
+                        rstrTxt = "meat"
+                        print(rstrTxt)
+                    })
+                    
+                    NavigationLink(destination: ContentView().environmentObject(vm)) {
+                        Text("No Gluten")
+                    }.simultaneousGesture(TapGesture().onEnded {
+                        rstrTxt = "gluten"
+                        print(rstrTxt)
+                    })
+                    
+                    NavigationLink(destination: ContentView().environmentObject(vm)) {
+                        Text("No Fruit")
+                    }.simultaneousGesture(TapGesture().onEnded {
+                        rstrTxt = "fruit"
+                        print(rstrTxt)
+                    })
                 }
             }
 
