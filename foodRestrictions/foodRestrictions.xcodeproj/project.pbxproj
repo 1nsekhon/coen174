@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC24BE122A0C65E100C4D68A /* PythonCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24BE112A0C65E100C4D68A /* PythonCodeView.swift */; };
+		DC24BE462A118BC500C4D68A /* AttemptTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24BE452A118BC500C4D68A /* AttemptTwo.swift */; };
+		DC24BE642A11CF6000C4D68A /* SimpleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24BE632A11CF6000C4D68A /* SimpleAPI.swift */; };
+		DC24BE682A157FB800C4D68A /* translatedPython.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24BE672A157FB800C4D68A /* translatedPython.swift */; };
+		DC24BE6B2A15809600C4D68A /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = DC24BE6A2A15809600C4D68A /* OpenAI */; };
+		DC24BE6D2A1583D400C4D68A /* translation4.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24BE6C2A1583D400C4D68A /* translation4.swift */; };
+		DC24BE702A15842900C4D68A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DC24BE6F2A15842900C4D68A /* Alamofire */; };
 		DCDF333F29F9DE93001FCB42 /* foodRestrictionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDF333E29F9DE93001FCB42 /* foodRestrictionsApp.swift */; };
 		DCDF334129F9DE93001FCB42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDF334029F9DE93001FCB42 /* ContentView.swift */; };
 		DCDF334329F9DE98001FCB42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCDF334229F9DE98001FCB42 /* Assets.xcassets */; };
 		DCDF334629F9DE98001FCB42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCDF334529F9DE98001FCB42 /* Preview Assets.xcassets */; };
 		DCDF33A529FAE471001FCB42 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDF33A429FAE471001FCB42 /* AppViewModel.swift */; };
 		DCDF33A729FAE856001FCB42 /* DataScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDF33A629FAE856001FCB42 /* DataScannerView.swift */; };
-		DCED8ED32A0210EA00FC596E /* ExternalFileInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED8ED22A0210EA00FC596E /* ExternalFileInteraction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC24BE112A0C65E100C4D68A /* PythonCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonCodeView.swift; sourceTree = "<group>"; };
+		DC24BE452A118BC500C4D68A /* AttemptTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttemptTwo.swift; sourceTree = "<group>"; };
+		DC24BE632A11CF6000C4D68A /* SimpleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAPI.swift; sourceTree = "<group>"; };
+		DC24BE672A157FB800C4D68A /* translatedPython.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = translatedPython.swift; sourceTree = "<group>"; };
+		DC24BE6C2A1583D400C4D68A /* translation4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = translation4.swift; sourceTree = "<group>"; };
 		DCDF333B29F9DE93001FCB42 /* foodRestrictions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foodRestrictions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDF333E29F9DE93001FCB42 /* foodRestrictionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodRestrictionsApp.swift; sourceTree = "<group>"; };
 		DCDF334029F9DE93001FCB42 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,7 +54,6 @@
 		DCDF335529F9DE98001FCB42 /* foodRestrictionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = foodRestrictionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDF33A429FAE471001FCB42 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		DCDF33A629FAE856001FCB42 /* DataScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScannerView.swift; sourceTree = "<group>"; };
-		DCED8ED22A0210EA00FC596E /* ExternalFileInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalFileInteraction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC24BE6B2A15809600C4D68A /* OpenAI in Frameworks */,
+				DC24BE702A15842900C4D68A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +83,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC24BE712A158C1A00C4D68A /* Old Code */ = {
+			isa = PBXGroup;
+			children = (
+				DC24BE112A0C65E100C4D68A /* PythonCodeView.swift */,
+				DC24BE452A118BC500C4D68A /* AttemptTwo.swift */,
+				DC24BE672A157FB800C4D68A /* translatedPython.swift */,
+				DC24BE632A11CF6000C4D68A /* SimpleAPI.swift */,
+			);
+			path = "Old Code";
+			sourceTree = "<group>";
+		};
 		DCDF333229F9DE93001FCB42 = {
 			isa = PBXGroup;
 			children = (
@@ -94,9 +117,10 @@
 			children = (
 				DCDF333E29F9DE93001FCB42 /* foodRestrictionsApp.swift */,
 				DCDF33A429FAE471001FCB42 /* AppViewModel.swift */,
-				DCED8ED22A0210EA00FC596E /* ExternalFileInteraction.swift */,
 				DCDF334029F9DE93001FCB42 /* ContentView.swift */,
+				DC24BE6C2A1583D400C4D68A /* translation4.swift */,
 				DCDF33A629FAE856001FCB42 /* DataScannerView.swift */,
+				DC24BE712A158C1A00C4D68A /* Old Code */,
 				DCDF334229F9DE98001FCB42 /* Assets.xcassets */,
 				DCDF334429F9DE98001FCB42 /* Preview Content */,
 			);
@@ -127,6 +151,10 @@
 			dependencies = (
 			);
 			name = foodRestrictions;
+			packageProductDependencies = (
+				DC24BE6A2A15809600C4D68A /* OpenAI */,
+				DC24BE6F2A15842900C4D68A /* Alamofire */,
+			);
 			productName = foodRestrictions;
 			productReference = DCDF333B29F9DE93001FCB42 /* foodRestrictions.app */;
 			productType = "com.apple.product-type.application";
@@ -199,6 +227,10 @@
 				Base,
 			);
 			mainGroup = DCDF333229F9DE93001FCB42;
+			packageReferences = (
+				DC24BE692A15809600C4D68A /* XCRemoteSwiftPackageReference "OpenAI" */,
+				DC24BE6E2A15842900C4D68A /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = DCDF333C29F9DE93001FCB42 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -241,11 +273,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCED8ED32A0210EA00FC596E /* ExternalFileInteraction.swift in Sources */,
+				DC24BE682A157FB800C4D68A /* translatedPython.swift in Sources */,
+				DC24BE122A0C65E100C4D68A /* PythonCodeView.swift in Sources */,
+				DC24BE6D2A1583D400C4D68A /* translation4.swift in Sources */,
 				DCDF334129F9DE93001FCB42 /* ContentView.swift in Sources */,
+				DC24BE462A118BC500C4D68A /* AttemptTwo.swift in Sources */,
 				DCDF333F29F9DE93001FCB42 /* foodRestrictionsApp.swift in Sources */,
 				DCDF33A529FAE471001FCB42 /* AppViewModel.swift in Sources */,
 				DCDF33A729FAE856001FCB42 /* DataScannerView.swift in Sources */,
+				DC24BE642A11CF6000C4D68A /* SimpleAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +605,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC24BE692A15809600C4D68A /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.1;
+			};
+		};
+		DC24BE6E2A15842900C4D68A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC24BE6A2A15809600C4D68A /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC24BE692A15809600C4D68A /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+		DC24BE6F2A15842900C4D68A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC24BE6E2A15842900C4D68A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DCDF333329F9DE93001FCB42 /* Project object */;
 }
