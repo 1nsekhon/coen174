@@ -15,7 +15,7 @@ struct foodRestrictionsApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                ContentView()
+                restrictionSelection()
                     .environmentObject(vm)
                     .task {
                         await vm.requestDataScannerAccessStatus()           //First time the user launches the app, asks for camera access
