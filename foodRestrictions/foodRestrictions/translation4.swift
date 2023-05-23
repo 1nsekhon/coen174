@@ -70,6 +70,18 @@ struct apiCall: View {
     
     var body: some View {
         VStack {
+            if rstrTxt.caseInsensitiveCompare("meat") == .orderedSame {
+                Text("For dishes without meat, we recommend:\n\n")
+            }
+            
+            if rstrTxt.caseInsensitiveCompare("gluten") == .orderedSame {
+                Text("For dishes without gluten, we recommend:\n\n")
+            }
+            
+            if rstrTxt.caseInsensitiveCompare("fruit") == .orderedSame {
+                Text("For dishes without fruit, we recommend:\n\n")
+            }
+            
             Text(str)
         }
         .onAppear {
@@ -96,19 +108,19 @@ struct apiCall: View {
                     for item in menuItems {
                         if rstrTxt.caseInsensitiveCompare("meat") == .orderedSame {
                             if item.containsMeat.caseInsensitiveCompare("no") == .orderedSame {
-                                str = str + item.foodItem + ", "
+                                str = str + item.foodItem + "\n\n"
                             }
                         }
                         
                         if rstrTxt.caseInsensitiveCompare("gluten") == .orderedSame {
                             if item.containsGluten.caseInsensitiveCompare("no") == .orderedSame {
-                                str = str + item.foodItem + ", "
+                                str = str + item.foodItem + "\n\n"
                             }
                         }
                         
                         if rstrTxt.caseInsensitiveCompare("fruit") == .orderedSame {
                             if item.containsFruit.caseInsensitiveCompare("no") == .orderedSame {
-                                str = str + item.foodItem + ", "
+                                str = str + item.foodItem + "\n\n"
                             }
                         }
                         
