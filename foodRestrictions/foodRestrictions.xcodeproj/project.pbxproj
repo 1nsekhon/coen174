@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC24BE122A0C65E100C4D68A /* PythonCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24BE112A0C65E100C4D68A /* PythonCodeView.swift */; };
-		DC24BE462A118BC500C4D68A /* AttemptTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24BE452A118BC500C4D68A /* AttemptTwo.swift */; };
-		DC24BE642A11CF6000C4D68A /* SimpleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24BE632A11CF6000C4D68A /* SimpleAPI.swift */; };
-		DC24BE682A157FB800C4D68A /* translatedPython.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24BE672A157FB800C4D68A /* translatedPython.swift */; };
 		DC24BE6B2A15809600C4D68A /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = DC24BE6A2A15809600C4D68A /* OpenAI */; };
 		DC24BE6D2A1583D400C4D68A /* translation4.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24BE6C2A1583D400C4D68A /* translation4.swift */; };
 		DC24BE702A15842900C4D68A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DC24BE6F2A15842900C4D68A /* Alamofire */; };
@@ -40,10 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DC24BE112A0C65E100C4D68A /* PythonCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonCodeView.swift; sourceTree = "<group>"; };
-		DC24BE452A118BC500C4D68A /* AttemptTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttemptTwo.swift; sourceTree = "<group>"; };
-		DC24BE632A11CF6000C4D68A /* SimpleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAPI.swift; sourceTree = "<group>"; };
-		DC24BE672A157FB800C4D68A /* translatedPython.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = translatedPython.swift; sourceTree = "<group>"; };
 		DC24BE6C2A1583D400C4D68A /* translation4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = translation4.swift; sourceTree = "<group>"; };
 		DCDF333B29F9DE93001FCB42 /* foodRestrictions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foodRestrictions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDF333E29F9DE93001FCB42 /* foodRestrictionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodRestrictionsApp.swift; sourceTree = "<group>"; };
@@ -83,17 +75,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DC24BE712A158C1A00C4D68A /* Old Code */ = {
-			isa = PBXGroup;
-			children = (
-				DC24BE112A0C65E100C4D68A /* PythonCodeView.swift */,
-				DC24BE452A118BC500C4D68A /* AttemptTwo.swift */,
-				DC24BE672A157FB800C4D68A /* translatedPython.swift */,
-				DC24BE632A11CF6000C4D68A /* SimpleAPI.swift */,
-			);
-			path = "Old Code";
-			sourceTree = "<group>";
-		};
 		DCDF333229F9DE93001FCB42 = {
 			isa = PBXGroup;
 			children = (
@@ -120,7 +101,6 @@
 				DCDF334029F9DE93001FCB42 /* ContentView.swift */,
 				DC24BE6C2A1583D400C4D68A /* translation4.swift */,
 				DCDF33A629FAE856001FCB42 /* DataScannerView.swift */,
-				DC24BE712A158C1A00C4D68A /* Old Code */,
 				DCDF334229F9DE98001FCB42 /* Assets.xcassets */,
 				DCDF334429F9DE98001FCB42 /* Preview Content */,
 			);
@@ -273,15 +253,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC24BE682A157FB800C4D68A /* translatedPython.swift in Sources */,
-				DC24BE122A0C65E100C4D68A /* PythonCodeView.swift in Sources */,
 				DC24BE6D2A1583D400C4D68A /* translation4.swift in Sources */,
 				DCDF334129F9DE93001FCB42 /* ContentView.swift in Sources */,
-				DC24BE462A118BC500C4D68A /* AttemptTwo.swift in Sources */,
 				DCDF333F29F9DE93001FCB42 /* foodRestrictionsApp.swift in Sources */,
 				DCDF33A529FAE471001FCB42 /* AppViewModel.swift in Sources */,
 				DCDF33A729FAE856001FCB42 /* DataScannerView.swift in Sources */,
-				DC24BE642A11CF6000C4D68A /* SimpleAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
