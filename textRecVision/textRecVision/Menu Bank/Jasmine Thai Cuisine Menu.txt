@@ -1,0 +1,378 @@
+﻿Jasmine Thai Cuisine
+
+
+1211 Franklin Mall Santa Clara, CA 95050 United States
+
+
+
+
+
+
+________________
+
+
+* CORN CAKE
+* $10.95
+* Fried corn cake blended with curry paste, green beans, and kiffer lime leaf
+* * CRISPY CALAMARI
+* $10.95
+* Served with honey Sriracha and tar tar sauce.
+* * * CURRY PUFF
+* $10.95
+* Baked pastry shell filled with curries potatoes
+* * GRILLED BACON WRAPS
+* $10.95
+* Shrimps wrapped with bacon served with honey sriracha sauce.
+* * MINI ROLLS
+* $10.95
+* Marinated ground chicken, garlic, basil leaves wrapped in egg roll wrapped & crispy-fried.
+* * PRAWN TEMPURA
+* $10.95
+* Crispy fried prawns served with tempura sauce.
+* * * ROYAL PRAWNS ROLLS
+* $10.95
+* Prawns wrapped in egg roll wrapper and crispy fried, served with plum sauce.
+* * Roti
+* $8.95
+* Roti bread served with yellow curry and cucumber salad
+* * * SATAY CHICKEN
+* $10.95
+* Grilled marinated chicken served with peanut sauce and cucumber salsa.
+* * * THAI IMPERIAL ROLLS
+* $8.95
+* Crispy-fried egg rolls stuffed with vegetables and silver noodle served with plum sauce.
+* * \
+* THAI SUMMER ROLL (SHRIMP OR TOFU)
+* $8.95
+* Carrots, romaine lettuce, cucumber and rice noodles wrapped in rice paper served with sweet & spicy peanut sauce.
+* * * TOD MUN
+$10.95
+Fried fish cakes blended with curry paste, green beans, and kaffir lime leaves, served with cucumber sauce.
+* * ​MONEY BAG
+* $10.95
+* Crispy pastry filled with marinated chicken, prawns shredded corn.
+
+
+   * LARB TOFU
+   * $12.95
+   * Tofu tossed with onions, toasted rice powder and fresh mint leaves
+   *    * BEEF SALAD
+   * $15.95
+   * Grilled beef tossed with onions, cucumber, tomatoes, mint leaves and chili lime dressing.
+   *    *    * LARB CHICKEN
+   * $14.95
+   * Grounded chicken tossed with onions, mint leaves, herbal rice toasted powder & roasted pepper.
+   *    * LARB DUCK
+   * $18.95
+   * Boneless duck tossed with lime juice red chili powder, herbal rice toasted powder and onions.
+   *    * MANGO SALAD (SHRIMP or TOFU)
+   * $15.95
+   * Shredded mango tossed with carrots, cashew nuts, onions, and lime juice.
+   *    * MOO NAM TOK
+   * $15.95
+   * Tender pork slice, charbroiled, tossed with onions, herbal rice toasted powder & mint leaves.
+   *    *    * PAPAYA SALAD
+   * $12.95
+   * Green papaya salad with tomatoes, garlic, dry shrimps, green beans and roasted peanut.
+   *    * PLA GOONG
+   * $15.95
+   * Grilled prawns tossed with onions. lime juice, kaffir lime leaf, lemongrass & sweet chili paste.
+   *    * SALMON SALAD
+   * $17.95
+   * Grilled salmon tossed with lemongrass, ginger, cashew nuts, kaffir lime leaf and onions.​
+   *    * SEAFOOD SALAD
+   * $18.95
+   * Grilled prawns, squids, fish fillet, scallops tossed with lemongrass, kaffir lime leaf & onions.
+   *    * SILVER NOODLE (SHRIMP or TOFU)
+   * $15.95
+   * Silver noodles, grilled prawns, grounded chicken, onions & mint leaves mixed in a Thai dressing.
+   *    * SOM TUM GRILLED PRAWNS
+   * $15.95
+   * Green papaya salad with tomatoes, garlic, grilled prawns, green beans and roasted peanut.
+   *    * THAI GARDEN SALAD (CHICKEN OR TOFU)
+   * $12.95
+   * Mixed fresh garden vegetables, grilled chicken and boiled egg served with Thai salad dressing.
+   * BEEF NOODLE SOUP
+   * $15.95
+   * Tender beef with rice noodles in beef broth soup, green onions, bean sprout, and fried garlic
+   *    * CHICKEN NOODLE SOUP
+   * $14.95
+   * Chicken with rice noodles in chicken broth soup, bean sprout, green onions, and fried garlic
+   *    * DUCK NOODLE SOUP
+   * $18.95
+   * Boneless roasted duck, rice noodles, celery, green onions, bean sprout, and fried garlic
+   *    * KANG JUED CHICKEN
+   * $12.95
+   *    * KANG JUED VEGETARIAN
+   * $12.95
+   * Tofu, yellow onions, mushrooms, green onions, napa cabbage, and vemicilli noodle in light broth
+   *    * POTAK
+   * $14.95
+   * Prawns, scollops, squids, fish fillet, mushrooms with lemongrass, galanga, kaffir lime leaf, sweet basil in a rich hot & sour lime juice broth
+   *    * SEAFOOD NOODLE SOUP
+   * $18.95
+   * Combination of fish balls, shrimp balls, squids and rice noodles in chicken broth soup topped with fried-prawns
+   *    *    * TOM KHA CHICKEN
+   * $12.95
+   *    * TOM KHA FISH
+   * $13.95
+   *    * TOM KHA PRAWN
+   * $13.95
+   *    * TOM KHA SEAFOOD
+   * $14.95
+   * Hot and spicy sour coconut milk soup favored with lemongrass, galanga, kaffir lime leaf, mushrooms,fresh Thai chili & lime juice
+   *    * TOM KHA VEGETARIAN
+   * $12.95
+   *    *    * TOM YUM CHICKEN
+   * $12.95
+   *    * TOM YUM FISH
+   * $13.95
+   *    * TOM YUM PRAWN
+   * $13.95
+   *    * TOM YUM SEAFOOD
+   * $14.95
+   * Hot and spicy sour soup favored with lemongrass, galanga, kaffir lime leaf, mushrooms, fresh Thai chili and lime juice
+   *    * TOM YUM VEGETARIAN
+   * $12.95
+   *    * WONTON SOUP
+   * $12.95
+   * Prawn wonton, streamed lettuce in light chicken broth
+   * BASIL
+   * $14.95
+   * Stir-fried with yellow onions, bell peppers, garlic, Thai chili, and sweet basil.
+   *    *    * BROCCOLI
+   * $14.95
+   * Stir-fried with garlic, broccoli, carrot and oyster sauce flavor.
+   *    *    * CASHEW
+   * $14.95
+   * Stir fried with onions, carrots, sweet chili paste, toasted chili and cashew nuts.
+   *    * EGGPLANT
+   * $14.95
+   * Stir fried with eggplants, garlic, bell peppers and fermented soybean paste.
+   *    * GARLIC
+   * $14.95
+   * Stir-fried with garlic and black pepper and served with broccoli.
+   *    * GINGER
+   * $14.95
+   * Stir-fried with yellow onions green onions, mushroom, bell peppers and ginger.
+   *    * GREEN BEAN
+   * $14.95
+   * Stir-fried with green bean, bell pepper, and garlic sauce.
+   *    *    * MIXED VEGGIES
+   * $14.95
+   * Stir fried with green beans, carrots, baby corn, napa cabbage and bean sprout
+   *    * PAD WOON SEN
+   * $14.95
+   * Stir fried with silver noodles, eggs, green onions and tomatoes
+   *    * PHIX KHING
+   * $14.95
+   * Stir fried with green beans, bell peppers, kaffir lime leaf and curry paste.
+   *    * RAMA
+   * $14.95
+   * Chicken or Tofu and spinach topped with peanut sauce.
+   *    * SPICY
+   * $14.95
+   * Stir-fried with mushrooms, yellow onions, bell peppers and green onions.
+   *    *    * SWEET AND SOUR
+   * $14.95
+   * Stir-fried with yellow onions, green onions, cucumber, pineapple and tomatoes
+   * GREEN CURRY
+   * $14.95
+   * Green coconut milk curry, eggplant, bell peppers, and sweet basil.
+   *    * LYCHEE CURRY
+   * $14.95
+   * Red coconut milk curry, bell peppers, and sweet basil.
+   *    * MANGO CURRY
+   * $14.95
+   * Red coconut milk curry, fresh mango, cashew nuts, bell peppers and sweet basil.
+   *    *    * MUSSAMUN CURRY
+   * $14.95
+   * Thick coconut milk curry sauce, peanuts, carrots, potatoes, ginger and peanut sauce.
+   *    * PANANG CURRY
+   * $14.95
+   * Thick red curry with finely sliced kaffir lime leaf, bell peppers and sweet basil.
+   *    * PINEAPPLE
+   * $14.95
+   * Red coconut milk curry, pineapple, cherry tomatoes, bell peppers and sweet basil.
+   *    * PUMPKIN CURRY
+   * $14.95
+   * Red coconut milk curry, pumpkin, bell peppers and sweet basil.
+   * BANGKOK FRIED RICE
+   * $14.95
+   * Fried rice with red curry, coconut milk, sweet basil and bamboo.
+   *    * CHOW MIEN
+   * $14.95
+   * Stir-fried chow mien with cabbage, string bean and onions.
+   *    *    * DRUNK NOODLE
+   * $14.95
+   * Stir-fried big flat noodles with tomatoes, onions, bell peppers, sweet basil, garlic, & chili.
+   *    * FRIED RICE
+   * $14.95
+   * Jasmine rice pan fried with egg, yellow onions, carrots, green peas and tomatoes.
+   *    *    * PAD SEE EW
+   * $14.95
+   * Stir-fried big flat noodle with broccoli, egg, garlic and black soy sauce.
+   *    *    * PAD THAI
+   * $14.95
+   * Stir-fried rice noodle with bean sprout, green onions and egg.
+   *    * PINEAPPLE FRIED RICE
+   * $14.95
+   * Jasmine rice pan fried with pineapple, egg, carrots, yellow onions and cashew nuts.
+   *    *    * RAD NAR
+   * $14.95
+   * Pan fried big flat noodles, topped with gravy, broccoli, and fermented soy bean.
+   *    * SPAGHETTI KHEE MAO
+   * $14.95
+   * Pan fried spaghetti, yellow onion, bell peppers, sweet basil, garlic, and chili.
+   *    * SPICY FRIED RICE
+   * $14.95
+   * Jasmine rice pan fried with sweet basil, bell peppers, yellow onions, garlic, and chili.
+   *    *    *    * RED CURRY
+   * $14.95
+   * Red coconut milk curry, bamboo shoot, bell peppers and sweet basil.
+   *    * YELLOW CURRY
+   * $14.95
+   * Yellow coconut milk curry, carrot, potato.
+   * BASIL SEAFOOD
+   * $18.95
+   * Stir-fried with prawns, scollops, squids, fish fillet, bell peppers, garlic, chili, onions and sweet basil.
+   *    * CATFISH DELIGHT
+   * $17.95
+   * CATFISH DELIGHT
+   *    * GRILLED SEABASS
+   * $26.95
+   * Grilled seabass fillet served with cucumber sauce.
+   *    * HAPPY SEABASS
+   * $26.95
+   * Fried light batter seabass topped with stir fried garlic, onions, bell peppers and sweet basil.
+   *    * HOA MOK PLA
+   * $16.95
+   * Streamed fish with coconut milk and napa cabbage in a banana leaf wrapping.
+   *    * JASMINE PRAWN AND SCALLOP
+   * $18.95
+   * Jumbo prawns and scollop, egg, onions, bell peppers in yellow curry cream sauce.
+   *    * KING & I
+   * $17.95
+   * Grilled salmon fillet marinated in mild sauce, charbroiled served with Thai sauce.
+   *    * LEMON SEABASS
+   * $26.95
+   * Seabass fillet, steam with lime juice, chili, garlic, cilantro, and chopped bell pepper.
+   *    * PLA NEUNG
+   * $26.95
+   * Fillet seabass streamed with light soy sauce, ginger, celery and bell peppers.
+   *    * PLA SEABASS MANAO
+   * $26.95
+   * Pan fried seabass fillet topped with lemon sauce
+   *    * PLA SUPPAROD
+   * $26.95
+   * Seabass fillet, ginger, pineapple simmered in yellow coconut milk curry.
+   *    * SEABASS DELIGHT
+   * $26.95
+   * Sauteed seabass fillet with ginger, celery, yellow onions, bell peppers, and soybean sauce.
+   *    * SPECIAL POMPANO
+   * $18.95
+   * Deep-fried whole pompano topped with three flavors sauce and mushroom.
+   *    * SPICY CRISPY CATFISH
+   * $17.95
+   * Sauteed crispy catfish fillet, mushroom, bell peppers, garlic, chili, and sweet basil.
+   *    * SWEET & SOUR SALMON
+   * $17.95
+   * Stir-fried salmon fillet with cucumber, pineapple, onions, tomatoes in special tomato sauce.
+
+
+________________
+
+
+   * BACON FRIED RICE
+   * $14.95
+   * Fried rice with egg, bacon, onions, green peas, and carrot
+   *    * BASIL CHICKEN WING
+   * $14.95
+   * Deep-fried chicken wings sauteed with garlic, bell peppers and fried sweet basil.
+   *    * BBQ BEEF
+   * $16.95
+   * Marinated beef with lemongrass, black pepper and honey
+   *    * BBQ PORK
+   * $16.95
+   * Marinated pork with plum sugar and Thai bbq sauce
+   *    * CATFISH CURRY
+   * $17.95
+   * Green coconut milk curry, crispy catfish filet, bamboo shoot and sweet basil
+   *    * CATFISH DELIGHT
+   * $17.95
+   * Stir fried crispy catfish with celery, bell peppers, yellow onions and garlic
+   *    * CHICKEN MANAO
+   * $15.95
+   * Pan fried crispy chicken topped with lemon sauce.
+   *    * CHINESE SAUSAGE FRIED RICE
+   * $14.95
+   * Jasmine rice pan fried with slice Chinese sausage, egg and yellow onions.
+   *    * CHOO CHEE PRAWN
+   * $16.95
+   * Thick red coconut milk curry, jumbo prawn, mushrooms, bell peppers and finely sliced kaffir lime leaf.
+   *    * CHOO CHEE TROUT OR SALMON
+   * $17.95
+   * Crispy boneless whole trout or salmon topped with thick coconut milk curry sauce and bell peppers.
+   *    * CRAB FRIED RICE
+   * $16.95
+   * Jasmine rice pan fired with special crab meat, egg, green peas, carrots and green onions.
+   *    * CRISPY GARLIC PRAWN
+   * $16.95
+   * Marinated in garlic sauce, lightly batter and deep fried served with shredded lettuce.
+   *    * DANCING PRAWN
+   * $16.95
+   * Grilled jumbo prawn stuffed with ground chicken, prawn and water chestnut.
+   *    * GOONG OP WOON SEN
+   * $16.95
+   * Silver noodle, jumbo prawns, celery ginger, green onions, baked served in earthenware pot.
+   *    * GOONG PIEW WAN
+   * $17.95
+   * Cucumber and pineapple in a sweet and sour sauce topped with fried prawns
+   *    * HOA MOK PLA
+   * $16.95
+   * Steamed fish with coconut milk, napa cabbage in a banana leaf wrapping.
+   *    * JAN PAD PHOO
+   * $16.95
+   * Stir-fried rice noodle, crab meat, egg, and green onions.
+   *    * MANGO CHA CHA
+   * $16.95
+   * Sauteed prawns with fresh mango, cashew nuts, green onions and bell peppers.
+   *    * ROASTED DUCK CURRY
+   * $18.95
+   * Red coconut milk curry, boneless roasted duck, pineapple, cherry tomatoes, bell peppers, and sweet basil.
+   *    * SPECIAL POMPANO
+   * $18.95
+   * Deep fried whole pompano topped with three flavors sauce and mushrooms
+   *    * SPICY CRISPY CATFISH
+   * $17.95
+   * Sauteed crispy catfish fillet, mushrooms, bell peppers, garlic, chili and sweet basil
+   * Coconut Rice
+   * $3.00
+   *    *    * Cucumber Salad
+   * $2.00
+   *    *    * Peanut Sauce
+   * $2.00
+   *    *    * Steamed Brown Rice
+   * $2.00
+   *    *    * Steamed Jasmine Rice
+   * $2.00
+   *    * Steamed Noodles
+   * $3.00
+   *    *    * Steamed Veggies
+   * $3.00
+   *    *    * Sticky Rice
+   * $2.00
+   * Apple Juice
+   * $3.00
+   *    * Arnold Palmer
+   * $3.00
+   *    *    * Coke
+   * $2.00
+   *    * Cranberry Juice
+   * $3.00
+   *    *    * Diet Coke
+   * $2.00
+   *    *    * Fresh Coconut Juice
+   * $5.00
+   *    * Ice Tea
+   * $2.00

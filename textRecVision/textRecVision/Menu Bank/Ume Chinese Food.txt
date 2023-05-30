@@ -1,0 +1,367 @@
+﻿Ume Chinese Food
+2595 N First St, San Jose, CA 9513
+Appetizers & Soup 开胃菜和汤
+
+
+Chicken Salad (L) 鸡肉沙拉(大)
+$12.25
+
+
+Chicken Salad (S) 鸡肉沙拉(小)
+$7.00
+
+
+Hot & Sour Soup (S) 酸辣汤(小)
+$4.85
+
+
+Wonton Soup (L) 云吞汤(大)
+$12.50
+
+
+Wonton Soup (S) 云吞汤(小)
+$4.85
+
+
+Vegetable Egg Roll 蔬菜蛋卷
+$1.65
+
+
+Pot Sticker (6) 锅贴(6)
+$11.50
+
+
+Small Chicken Salad With Soup Of The Day 小鸡肉沙拉和当天的汤
+$10.95
+
+
+Hot & Sour Soup (L) 酸辣汤(大)
+$12.50
+Vegetable & Tofu 蔬菜和豆腐
+
+
+Eggplant With Hot Garlic Sauce (Seasonal) 蒜香茄子(季节性)
+$14.00
+
+
+Orange Tofu 陈皮豆腐
+$12.95
+
+
+Ma Po Tofu (Hot & Spicy) 麻婆豆腐(辣)
+$14.00
+
+
+Broccoli With Cashew Nuts 腰果西兰花
+$14.00
+
+
+Broccoli With Spicy Garlic Sauce (Hot & Spicy) 香辣蒜茸西兰花(辣)
+$14.00
+
+
+Basil Tofu & Vegetable (Hot & Spicy) 罗勒豆腐蔬菜(辣)
+$14.00
+
+
+Dry Sauteed String Bean (Seasonal) 干煸四季豆(季节性)
+$14.00
+
+
+Tofu With Spicy Garlic Sauce (Hot & Spicy) 香辣蒜香豆腐(辣)
+$14.00
+Noodle Soup 汤面
+
+
+Wor Wonton 窝云吞
+$15.50
+Chicken, BBQ pork, shrimp with wonton.
+
+
+Combination Rice Noodle Soup 什锦米粉汤
+$15.50
+Chicken, pork, shrimp with rice noodle.
+
+
+Combination Egg Noodle Soup 什锦鸡蛋汤面
+$15.50
+Chicken, pork, shrimp with egg noodle.
+
+
+B.B.Q Pork Wonton 叉烧云吞
+$15.00
+BBQ pork, wonton, veggie, and egg noodle.
+Dinner Special 特价晚餐
+
+
+Mongolian Beef (Hot & Spicy) 蒙古牛肉(辣)
+$16.50
+
+
+Tofu With Prawn 虾仁豆腐
+$14.95
+
+
+Szechuan Chicken (Hot & Spicy) 四川鸡肉(辣)
+$16.50
+
+
+Broccoli Prawn 西兰花虾
+$14.95
+
+
+Kung Pao Chicken (Hot & Spicy) 宫保鸡丁(辣)
+$16.50
+
+
+Prawn With Black Bean Sauce 豉汁虾
+$14.95
+
+
+Chicken With Black Bean Sauce 豉汁鸡
+$13.95
+
+
+Prawn With Lobster Sauce 虾龙糊
+$17.50
+
+
+Szechuan Beef (Hot & Spicy) 川味牛肉(辣)
+$13.95
+
+
+Tofu Prawn 豆腐虾
+$17.50
+
+
+Sweet & Sour Prawn 糖醋虾
+$17.50
+
+
+Beef With Vegetable 牛肉炒时蔬菜
+$16.50
+
+
+Cashew Chicken 腰果鸡
+$16.50
+
+
+Broccoli Beef 西兰花牛肉
+$16.50
+
+
+Kung Pao Prawn (Hot & Spicy) 宫保虾(辣)
+$14.95
+
+
+Broccoli Chicken 西兰花鸡
+$16.50
+Noodles & Rice 面和米饭
+
+
+Combination Fried Rice 什锦炒饭
+$16.50
+
+
+B.B.Q Pork Fried Rice 叉烧炒饭
+$15.50
+
+
+Beef Chow Fun 牛肉炒粉
+$16.50
+
+
+Shrimp Fried Rice 虾仁炒饭
+$16.50
+
+
+Chicken Chow Mein 鸡肉炒面
+$15.50
+
+
+Chicken Chow Fun 鸡肉炒粉
+$15.50
+
+
+Combination Chow Fun 什锦炒粉
+$16.50
+
+
+Shrimp Chow Fun 虾仁炒粉
+$16.50
+
+
+Shrimp Chow Mein 虾仁炒面
+$16.50
+
+
+Chicken Fried Rice 鸡肉炒饭
+$15.50
+
+
+Egg Roll 蛋卷
+$1.65
+
+
+Combination Chow Mein 什锦炒面
+$16.50
+B.B.Q Pork Chow Mein 叉烧炒面
+$15.50
+Seafood 海鲜
+
+
+Prawn With Black Bean Sauce 豉汁虾
+$16.50
+
+
+Sweet & Sour Fish
+$14.95
+
+
+Sweet & Sour Prawn 糖醋虾
+$16.50
+
+
+Hot Spicy Prawn (Hot & Spicy) 香辣虾(辣)
+$16.50
+
+
+Prawn With Tofu 豆腐虾
+$16.50
+
+
+Prawn With Cashew Nut 腰果虾
+$16.50
+
+
+Fish Fillet With Special Sauce (8pcs) 特制招牌鱼片(8个)
+$14.95
+
+
+Szechwan Prawn (Hot & Spicy) 川味虾(辣)
+$14.95
+
+
+Kung Pao Prawn (Hot & Spicy) 宫保虾(辣)
+$16.50
+
+
+Prawn With Salt & Pepper (Hot & Spicy) 椒盐大虾(辣)
+$16.50
+
+
+Prawn With Broccoli 西兰花虾
+$16.50
+
+
+Prawn With Lobster Sauce 虾龙糊
+$16.50
+
+
+Prawn With Mixed Vegetable 虾仁炒时蔬
+$16.50
+Chicken 鸡肉
+
+
+Chicken Ma Po Tofu (Hot & Spicy) 鸡肉麻婆豆腐(辣)
+$13.95
+
+
+Hot & Spicy Chicken (Hot & Spicy) 辣子鸡(辣)
+$16.50
+
+
+Mushroom Chicken (Seasonal) 蘑菇鸡(季节性)
+$16.50
+
+
+Lemon Chicken 柠檬鸡
+$16.50
+
+
+Broccoli Chicken 西兰花鸡
+$16.50
+
+
+Chicken With Mixed Vegetable 鸡肉什锦蔬菜
+$16.50
+
+
+Sweet & Sour Chicken 糖醋鸡
+$16.50
+
+
+Orange Chicken 陈皮鸡
+$16.50
+
+
+Cashew Chicken 腰果鸡
+$16.50
+
+
+Kung Pao Chicken (Hot & Spicy) 宫保鸡丁(辣)
+$16.50
+Chicken Green Bean (Season) 青豆鸡(季节性)
+$16.50
+Pork 猪肉
+
+
+B.B.Q Pork With Mixed Vegetable 叉烧肉炒时蔬
+$16.50
+
+
+Sweet & Sour Pork 甜酸肉
+$16.50
+Beef 牛肉
+
+
+Beef With Mixed Vegetable 牛肉炒时蔬
+$16.50
+
+
+Beef With Broccoli 西兰花牛肉
+$16.50
+
+
+Beef Ma Po Tofu (Hot & Spicy) 牛肉麻婆豆腐(辣)
+$13.95
+
+
+Beef Green Bean (Seasonal) 青豆牛肉(季节性)
+$16.50
+
+
+Beef With Black Bean Sauce 豉汁牛肉
+$16.50
+
+
+Mongolian Beef (Hot & Spicy) 蒙古牛肉(辣)
+$16.50
+
+
+Tofu Beef 豆腐牛肉
+$16.50
+
+
+Kung Pao Beef (Hot & Spicy) 宫保牛肉(辣)
+$16.50
+
+
+Beef With Satay Sauce (Hot & Spicy) 沙爹牛肉(辣)
+$16.50
+
+
+Szechwan Beef (Hot & Spicy) 川味牛肉(辣)
+$16.50
+Daily Special on The Steam Table Only 每日特价
+
+
+Two Items 两个菜
+$14.00
+
+
+Three Items 三个菜
+$15.50
+
+
+One Item 一个菜
