@@ -53,8 +53,8 @@ struct ContentView: View {
                 }
                 
                 //Export to txt file here
-                NavigationLink(destination: apiCall()) {
-                    Text("Accept Scan")
+                NavigationLink(destination: unitTestView()) {
+                    Text("Perform Unit Test")
                 }.simultaneousGesture(TapGesture().onEnded {
                     condenseString(items: vm.recognizedItems)
                 })
