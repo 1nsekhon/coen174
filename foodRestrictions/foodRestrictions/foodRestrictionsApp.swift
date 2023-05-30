@@ -10,6 +10,8 @@ import SwiftUI
 public var rstrTxt = ""
 public var menuTxt = ""
 
+public var unitTest = ""
+
 @main
 struct foodRestrictionsApp: App {
     

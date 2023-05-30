@@ -93,5 +93,6 @@ struct ContentView: View {
         print("Condensed")
         
         menuTxt = toWrite
+        unitTest = toWrite
     }
 }
