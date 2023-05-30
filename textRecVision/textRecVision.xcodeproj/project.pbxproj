@@ -16,9 +16,9 @@
 		DC6051BC2A25C98200907912 /* SpacingPhotos in Resources */ = {isa = PBXBuildFile; fileRef = DC6051B72A25C98200907912 /* SpacingPhotos */; };
 		DC6051BD2A25C98200907912 /* TextOnComputerPhotos in Resources */ = {isa = PBXBuildFile; fileRef = DC6051B82A25C98200907912 /* TextOnComputerPhotos */; };
 		DC6051BE2A25C98200907912 /* TextInScriptPhotos in Resources */ = {isa = PBXBuildFile; fileRef = DC6051B92A25C98200907912 /* TextInScriptPhotos */; };
-		DC6051C02A25C99A00907912 /* BaseLinePhotos in Resources */ = {isa = PBXBuildFile; fileRef = DC6051BF2A25C99A00907912 /* BaseLinePhotos */; };
 		DC6051C22A25C9E900907912 /* LightingPhotos in Resources */ = {isa = PBXBuildFile; fileRef = DC6051C12A25C9E900907912 /* LightingPhotos */; };
-		DC6051C42A25E27700907912 /* Font in Resources */ = {isa = PBXBuildFile; fileRef = DC6051C32A25E27700907912 /* Font */; };
+		DC6051D42A25E40100907912 /* FontSizePhotos in Resources */ = {isa = PBXBuildFile; fileRef = DC6051D32A25E40100907912 /* FontSizePhotos */; };
+		DC6051D62A25EAB700907912 /* Screenshot 2023-05-30 at 1.25.58 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6051D52A25EAB600907912 /* Screenshot 2023-05-30 at 1.25.58 AM.png */; };
 		DCDF337529F9E1D9001FCB42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDF337429F9E1D9001FCB42 /* AppDelegate.swift */; };
 		DCDF337729F9E1D9001FCB42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDF337629F9E1D9001FCB42 /* SceneDelegate.swift */; };
 		DCDF337929F9E1D9001FCB42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDF337829F9E1D9001FCB42 /* ViewController.swift */; };
@@ -57,21 +57,9 @@
 		DC6051B72A25C98200907912 /* SpacingPhotos */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SpacingPhotos; path = textRecVision/SpacingPhotos; sourceTree = SOURCE_ROOT; };
 		DC6051B82A25C98200907912 /* TextOnComputerPhotos */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TextOnComputerPhotos; path = textRecVision/TextOnComputerPhotos; sourceTree = SOURCE_ROOT; };
 		DC6051B92A25C98200907912 /* TextInScriptPhotos */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TextInScriptPhotos; path = textRecVision/TextInScriptPhotos; sourceTree = SOURCE_ROOT; };
-		DC6051BF2A25C99A00907912 /* BaseLinePhotos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BaseLinePhotos; sourceTree = "<group>"; };
 		DC6051C12A25C9E900907912 /* LightingPhotos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LightingPhotos; sourceTree = "<group>"; };
-		DC6051C32A25E27700907912 /* Font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Font; sourceTree = "<group>"; };
-		DC6051C62A25E27A00907912 /* Screenshot 2023-05-29 at 10.54.03 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2023-05-29 at 10.54.03 PM.png"; sourceTree = "<group>"; };
-		DC6051C72A25E27A00907912 /* Screenshot 2023-05-30 at 12.41.57 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2023-05-30 at 12.41.57 AM.png"; sourceTree = "<group>"; };
-		DC6051C82A25E27A00907912 /* Screenshot 2023-05-29 at 11.11.48 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2023-05-29 at 11.11.48 PM.png"; sourceTree = "<group>"; };
-		DC6051C92A25E27A00907912 /* Screenshot 2023-05-30 at 12.36.32 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2023-05-30 at 12.36.32 AM.png"; sourceTree = "<group>"; };
-		DC6051CA2A25E27A00907912 /* 1 menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1 menu.png"; sourceTree = "<group>"; };
-		DC6051CB2A25E27A00907912 /* Screenshot 2023-05-30 at 12.49.11 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2023-05-30 at 12.49.11 AM.png"; sourceTree = "<group>"; };
-		DC6051CD2A25E28300907912 /* Screenshot 2023-05-29 at 10.54.03 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2023-05-29 at 10.54.03 PM.png"; sourceTree = "<group>"; };
-		DC6051CE2A25E28300907912 /* Screenshot 2023-05-30 at 12.41.57 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2023-05-30 at 12.41.57 AM.png"; sourceTree = "<group>"; };
-		DC6051CF2A25E28300907912 /* Screenshot 2023-05-29 at 11.11.48 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2023-05-29 at 11.11.48 PM.png"; sourceTree = "<group>"; };
-		DC6051D02A25E28300907912 /* Screenshot 2023-05-30 at 12.36.32 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2023-05-30 at 12.36.32 AM.png"; sourceTree = "<group>"; };
-		DC6051D12A25E28300907912 /* 1 menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1 menu.png"; sourceTree = "<group>"; };
-		DC6051D22A25E28300907912 /* Screenshot 2023-05-30 at 12.49.11 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2023-05-30 at 12.49.11 AM.png"; sourceTree = "<group>"; };
+		DC6051D32A25E40100907912 /* FontSizePhotos */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = FontSizePhotos; path = textRecVision/FontSizePhotos; sourceTree = SOURCE_ROOT; };
+		DC6051D52A25EAB600907912 /* Screenshot 2023-05-30 at 1.25.58 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2023-05-30 at 1.25.58 AM.png"; sourceTree = "<group>"; };
 		DCDF337129F9E1D9001FCB42 /* textRecVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = textRecVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDF337429F9E1D9001FCB42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCDF337629F9E1D9001FCB42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,37 +103,9 @@
 		DC6051B22A25C95C00907912 /* TextOnTabletPhotos */ = {
 			isa = PBXGroup;
 			children = (
-				DC6051C52A25E27A00907912 /* Font */,
-				DC6051C32A25E27700907912 /* Font */,
+				DC6051D52A25EAB600907912 /* Screenshot 2023-05-30 at 1.25.58 AM.png */,
 			);
 			path = TextOnTabletPhotos;
-			sourceTree = "<group>";
-		};
-		DC6051C52A25E27A00907912 /* Font */ = {
-			isa = PBXGroup;
-			children = (
-				DC6051C62A25E27A00907912 /* Screenshot 2023-05-29 at 10.54.03 PM.png */,
-				DC6051C72A25E27A00907912 /* Screenshot 2023-05-30 at 12.41.57 AM.png */,
-				DC6051C82A25E27A00907912 /* Screenshot 2023-05-29 at 11.11.48 PM.png */,
-				DC6051C92A25E27A00907912 /* Screenshot 2023-05-30 at 12.36.32 AM.png */,
-				DC6051CA2A25E27A00907912 /* 1 menu.png */,
-				DC6051CB2A25E27A00907912 /* Screenshot 2023-05-30 at 12.49.11 AM.png */,
-			);
-			name = Font;
-			path = textRecVision/TextOnPhonePhotos/Font;
-			sourceTree = SOURCE_ROOT;
-		};
-		DC6051CC2A25E28300907912 /* Font */ = {
-			isa = PBXGroup;
-			children = (
-				DC6051CD2A25E28300907912 /* Screenshot 2023-05-29 at 10.54.03 PM.png */,
-				DC6051CE2A25E28300907912 /* Screenshot 2023-05-30 at 12.41.57 AM.png */,
-				DC6051CF2A25E28300907912 /* Screenshot 2023-05-29 at 11.11.48 PM.png */,
-				DC6051D02A25E28300907912 /* Screenshot 2023-05-30 at 12.36.32 AM.png */,
-				DC6051D12A25E28300907912 /* 1 menu.png */,
-				DC6051D22A25E28300907912 /* Screenshot 2023-05-30 at 12.49.11 AM.png */,
-			);
-			path = Font;
 			sourceTree = "<group>";
 		};
 		DCDF336829F9E1D9001FCB42 = {
@@ -171,9 +131,8 @@
 		DCDF337329F9E1D9001FCB42 /* textRecVision */ = {
 			isa = PBXGroup;
 			children = (
-				DC6051CC2A25E28300907912 /* Font */,
+				DC6051D32A25E40100907912 /* FontSizePhotos */,
 				DC6051C12A25C9E900907912 /* LightingPhotos */,
-				DC6051BF2A25C99A00907912 /* BaseLinePhotos */,
 				DC6051B72A25C98200907912 /* SpacingPhotos */,
 				DC6051B52A25C98200907912 /* TextInHandwritingPhotos */,
 				DC6051B92A25C98200907912 /* TextInScriptPhotos */,
@@ -317,15 +276,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC6051C22A25C9E900907912 /* LightingPhotos in Resources */,
+				DC6051D42A25E40100907912 /* FontSizePhotos in Resources */,
 				DCDF338129F9E1DB001FCB42 /* LaunchScreen.storyboard in Resources */,
 				DC6051BE2A25C98200907912 /* TextInScriptPhotos in Resources */,
-				DC6051C02A25C99A00907912 /* BaseLinePhotos in Resources */,
 				DC6051B12A25C94D00907912 /* TextOnPhonePhotos in Resources */,
 				DC6051B42A25C96800907912 /* TextOnLightBackgroundPhotos in Resources */,
 				DC6051BB2A25C98200907912 /* TextOnDarkBackgroundPhotos in Resources */,
 				DC6051BD2A25C98200907912 /* TextOnComputerPhotos in Resources */,
+				DC6051D62A25EAB700907912 /* Screenshot 2023-05-30 at 1.25.58 AM.png in Resources */,
 				DCDF337E29F9E1DB001FCB42 /* Assets.xcassets in Resources */,
-				DC6051C42A25E27700907912 /* Font in Resources */,
 				DC6051BC2A25C98200907912 /* SpacingPhotos in Resources */,
 				DC6051AE2A25C4FA00907912 /* Menu Bank in Resources */,
 				DC6051BA2A25C98200907912 /* TextInHandwritingPhotos in Resources */,
