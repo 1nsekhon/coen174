@@ -1,0 +1,94 @@
+import OpenAI
+import Foundation
+
+// Replace with your valid API key
+let apiKey = "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"
+
+OpenAI.configure(apiKey: apiKey)
+
+func sendOpenAIRequest(prompt: String) -> String {
+    do {
+        let completions = try OpenAI.Completion.create(engine: .davinci, prompt: prompt, maxTokens: 1024, n: 1, stop: nil, temperature: 0.5)
+        return completions.choices[0].text.trimmingCharacters(in: .whitespacesAndNewlines)
+    } catch OpenAIError.apiConnectionError {
+        return "API Connection Error"
+    } catch OpenAIError.authenticationError {
+        return "Invalid API Key"
+    } catch {
+        return "Unknown Error"
+    }
+}
+
+func itemizeJSON(response: String) -> String {
+    do {
+        let menuList = response.components(separatedBy: "\n")
+        var menuData = [menuList[0].components(separatedBy: ",")]
+        for i in 1..<menuList.count {
+            menuData.append(menuList[i].components(separatedBy: ","))
+        }
+        let menuDataFrame = DataFrame(data: menuData)
+        return menuDataFrame.description
+    } catch {
+        return error.localizedDescription
+    }
+}
+
+func countWords(response: String) -> Int {
+    return response.components(separatedBy: .whitespaces).count
+}
+
+func formatResponse(response: String) -> String {
+    return response.trimmingCharacters(in: .whitespacesAndNewlines)
+}
+
+func hasNoMeat(response: String) -> Bool {
+    return response.lowercased().contains("no meat")
+}
+
+func hasNoGluten(response: String) -> Bool {
+    return response.lowercased().contains("no gluten")
+}
+
+func hasNoFruit(response: String) -> Bool {
+    return response.lowercased().contains("no fruit")
+}
+
+// Unit tests
+func testSendOpenAIRequest() {
+    assert(sendOpenAIRequest(prompt: "Test prompt") != "API Connection Error")
+    assert(sendOpenAIRequest(prompt: "Test prompt") != "Invalid API Key")
+}
+
+func testItemizeJSON() {
+    let response = "Food Item,Description,Meat,Gluten,Fruit\nBurger,Delicious burger,yes,no,no\nPizza,Tasty pizza,no,yes,no"
+    let description = itemizeJSON(response: response)
+    print(description) // Output DataFrame description
+}
+
+func testCountWords() {
+    let response = "This is a test response"
+    assert(countWords(response: response) == 5)
+}
+
+func testFormatResponse() {
+    let response = "   This is a formatted response   "
+    assert(formatResponse(response: response) == "This is a formatted response")
+}
+
+func testHasNoMeat() {
+    let response = "This dish contains no meat"
+    assert(hasNoMeat(response: response) == true)
+    let response2 = "This dish may contain meat"
+    assert(hasNoMeat(response: response2) == false)
+}
+
+func testHasNoGluten() {
+    let response = "This dish contains no gluten"
+    assert(hasNoGluten(response: response) == true)
+    let response2 = "This dish may contain gluten"
+    assert(hasNoGluten(response: response2) == false)
+}
+
+func testHasNoFruit() {
+    let response = "This dish contains no fruit"
+    assert(hasNoFruit(response: response)
