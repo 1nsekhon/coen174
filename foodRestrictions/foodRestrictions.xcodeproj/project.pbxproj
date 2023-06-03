@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03244C252A2AD35200B528A5 /* Inter-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03244C242A2AD35200B528A5 /* Inter-ExtraBold.otf */; };
+		03244C282A2AD3DA00B528A5 /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03244C272A2AD3DA00B528A5 /* FontStyles.swift */; };
+		03244C2A2A2ADA5600B528A5 /* NoMeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03244C292A2ADA5600B528A5 /* NoMeatView.swift */; };
+		03244C2C2A2ADA6D00B528A5 /* NoGlutenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03244C2B2A2ADA6D00B528A5 /* NoGlutenView.swift */; };
+		03244C2E2A2ADA8600B528A5 /* NoFruitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03244C2D2A2ADA8600B528A5 /* NoFruitView.swift */; };
 		DC24BE6B2A15809600C4D68A /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = DC24BE6A2A15809600C4D68A /* OpenAI */; };
 		DC24BE6D2A1583D400C4D68A /* translation4.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24BE6C2A1583D400C4D68A /* translation4.swift */; };
 		DC24BE702A15842900C4D68A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DC24BE6F2A15842900C4D68A /* Alamofire */; };
@@ -37,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03244C242A2AD35200B528A5 /* Inter-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.otf"; sourceTree = "<group>"; };
+		03244C262A2AD36800B528A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		03244C272A2AD3DA00B528A5 /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
+		03244C292A2ADA5600B528A5 /* NoMeatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoMeatView.swift; sourceTree = "<group>"; };
+		03244C2B2A2ADA6D00B528A5 /* NoGlutenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoGlutenView.swift; sourceTree = "<group>"; };
+		03244C2D2A2ADA8600B528A5 /* NoFruitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoFruitView.swift; sourceTree = "<group>"; };
 		DC24BE6C2A1583D400C4D68A /* translation4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = translation4.swift; sourceTree = "<group>"; };
 		DC24BE742A1D264B00C4D68A /* restrictionSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restrictionSelection.swift; sourceTree = "<group>"; };
 		DCDF333B29F9DE93001FCB42 /* foodRestrictions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foodRestrictions.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03244C232A2AD32A00B528A5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				03244C242A2AD35200B528A5 /* Inter-ExtraBold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		DCDF333229F9DE93001FCB42 = {
 			isa = PBXGroup;
 			children = (
@@ -98,14 +117,20 @@
 		DCDF333D29F9DE93001FCB42 /* foodRestrictions */ = {
 			isa = PBXGroup;
 			children = (
+				03244C262A2AD36800B528A5 /* Info.plist */,
+				03244C232A2AD32A00B528A5 /* Fonts */,
 				DCDF333E29F9DE93001FCB42 /* foodRestrictionsApp.swift */,
 				DCDF33A429FAE471001FCB42 /* AppViewModel.swift */,
 				DC24BE742A1D264B00C4D68A /* restrictionSelection.swift */,
 				DCDF334029F9DE93001FCB42 /* ContentView.swift */,
 				DC24BE6C2A1583D400C4D68A /* translation4.swift */,
 				DCDF33A629FAE856001FCB42 /* DataScannerView.swift */,
+				03244C272A2AD3DA00B528A5 /* FontStyles.swift */,
 				DCDF334229F9DE98001FCB42 /* Assets.xcassets */,
 				DCDF334429F9DE98001FCB42 /* Preview Content */,
+				03244C292A2ADA5600B528A5 /* NoMeatView.swift */,
+				03244C2B2A2ADA6D00B528A5 /* NoGlutenView.swift */,
+				03244C2D2A2ADA8600B528A5 /* NoFruitView.swift */,
 			);
 			path = foodRestrictions;
 			sourceTree = "<group>";
@@ -232,6 +257,7 @@
 			files = (
 				DCDF334629F9DE98001FCB42 /* Preview Assets.xcassets in Resources */,
 				DCDF334329F9DE98001FCB42 /* Assets.xcassets in Resources */,
+				03244C252A2AD35200B528A5 /* Inter-ExtraBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +284,12 @@
 			files = (
 				DC24BE6D2A1583D400C4D68A /* translation4.swift in Sources */,
 				DC24BE752A1D264B00C4D68A /* restrictionSelection.swift in Sources */,
+				03244C2E2A2ADA8600B528A5 /* NoFruitView.swift in Sources */,
+				03244C2A2A2ADA5600B528A5 /* NoMeatView.swift in Sources */,
+				03244C282A2AD3DA00B528A5 /* FontStyles.swift in Sources */,
 				DCDF334129F9DE93001FCB42 /* ContentView.swift in Sources */,
 				DCDF333F29F9DE93001FCB42 /* foodRestrictionsApp.swift in Sources */,
+				03244C2C2A2ADA6D00B528A5 /* NoGlutenView.swift in Sources */,
 				DCDF33A529FAE471001FCB42 /* AppViewModel.swift in Sources */,
 				DCDF33A729FAE856001FCB42 /* DataScannerView.swift in Sources */,
 			);
@@ -420,6 +450,7 @@
 				DEVELOPMENT_TEAM = 4V3NTLJAU3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = foodRestrictions/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to scan text.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -450,6 +481,7 @@
 				DEVELOPMENT_TEAM = 4V3NTLJAU3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = foodRestrictions/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to scan text.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
