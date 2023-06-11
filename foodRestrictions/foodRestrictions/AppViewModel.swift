@@ -75,7 +75,7 @@ final class AppViewModel: ObservableObject {
         
         guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
             
-            dataScannerAccessStatus = .cameraNotAvailable
+            dataScannerAccessStatus = .scannerAvailable
             return
             
         }

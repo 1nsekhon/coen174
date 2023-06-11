@@ -8,41 +8,98 @@
 import SwiftUI
 
 struct restrictionSelection: View {
-    var restrictionS = ""
+    @State private var rstrTxt = ""
     
     @EnvironmentObject var vm: AppViewModel
-    
+
     var body: some View {
         switch vm.dataScannerAccessStatus {
-            
         case .scannerAvailable:
-            Text("Select your restrictions")
-            
-            VStack{
-                HStack{
-                    NavigationLink(destination: ContentView().environmentObject(vm)) {
-                        Text("No Meat")
-                    }.simultaneousGesture(TapGesture().onEnded {
-                        rstrTxt = "meat"
-                        print(rstrTxt)
-                    })
+            VStack {
+                
+                ZStack {
+                    let selectText = UIImage(named: "ic-Iinstructions")
                     
-                    NavigationLink(destination: ContentView().environmentObject(vm)) {
-                        Text("No Gluten")
-                    }.simultaneousGesture(TapGesture().onEnded {
-                        rstrTxt = "gluten"
-                        print(rstrTxt)
-                    })
-                    
-                    NavigationLink(destination: ContentView().environmentObject(vm)) {
-                        Text("No Fruit")
-                    }.simultaneousGesture(TapGesture().onEnded {
-                        rstrTxt = "fruit"
-                        print(rstrTxt)
-                    })
+                    if let selectText = UIImage(named: "ic-Iinstructions") {
+                        Image(uiImage: selectText)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 383.42, height: 70) // Match the Figma width and height
+                            .position(x: -39 + 383.42 / 2, y: 111 + 70 / 2) // Match the Figma position (x, y)
+                    }
+                }
+     
+                
+                VStack {
+                    HStack {
+                        ZStack {
+                            let noFruit = UIImage(named: "ic-nofruitoption")
+                        
+                            
+                            NavigationLink(destination: ContentView().environmentObject(vm)) {
+                                if let noFruit = UIImage(named: "ic-nofruitoption") {
+                                Image(uiImage: noFruit)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 107, height: 107)
+                                .position(x: 14 + 107/2, y: 107/2)
+                                }
+                            }
+                            .simultaneousGesture(TapGesture().onEnded {
+                                rstrTxt = "fruit"
+                                print(rstrTxt)
+                            })
+                            .frame(width: 107, height: 107)
+                            .position(x: 20 + 107/2, y: 107/2)
+                            
+                        }
+                        
+                        ZStack {
+                            let noMeat = UIImage(named: "ic-nomeatoption")
+                            
+                            NavigationLink(destination: ContentView().environmentObject(vm)) {
+                                if let noMeat = UIImage(named: "ic-nomeatoption") {
+                                    Image(uiImage: noMeat)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 107, height: 107)
+                                        .position(x: 20 + 107/2, y: 107/2)
+                                }
+                                
+                            }
+                            .simultaneousGesture(TapGesture().onEnded {
+                                rstrTxt = "meat"
+                                print(rstrTxt)
+                            })
+                            .frame(width: 107, height: 107)
+                            .position(x: 14 + 107/2, y: 107/2)
+                            
+                        }
+                        
+                        ZStack {
+                            let noGluten = UIImage(named: "ic-noglutenoption")
+
+                            NavigationLink(destination: ContentView().environmentObject(vm)) {
+                                if let noGluten = UIImage(named: "ic-noglutenoption") {
+                                    Image(uiImage: noGluten)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 107, height: 107)
+                                        .position(x: 14 + 107/2, y: 107/2)
+                                }
+                                
+                            }
+                            .simultaneousGesture(TapGesture().onEnded {
+                                rstrTxt = "gluten"
+                                print(rstrTxt)
+                            })
+                            .frame(width: 107, height: 107)
+                            .position(x: 14 + 107/2, y: 107/2)
+                        }
+                    }
                 }
             }
-
+            
             
         case .cameraNotAvailable:
             Text("Your device doesn't have a camera")
@@ -55,8 +112,20 @@ struct restrictionSelection: View {
             
         case .notDetermined:
             Text("Requesting camera access")
-            
         }
+    }
+}
+
+struct UILabelWrapperView: UIViewRepresentable {
+    func makeUIView(context: Context) -> UILabel {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.backgroundColor = .white
+        return label
+    }
+
+    func updateUIView(_ uiView: UILabel, context: Context) {
+        // Update the UILabel's appearance or properties here if needed
     }
 }
 
