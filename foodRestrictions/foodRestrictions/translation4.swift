@@ -67,11 +67,32 @@ struct responseItem: Decodable {
 
 struct apiCall: View {
     @State private var str = ""
+    @State private var isLoading = true
     
     var body: some View {
         VStack {
+            if (isLoading == true) {
+                ZStack {
+                    //ProgressView()
+                        //.progressViewStyle(CircularProgressViewStyle())
+                        
+                    Image("analyzing")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .edgesIgnoringSafeArea(.all)
+                }
+            }
             if rstrTxt.caseInsensitiveCompare("meat") == .orderedSame {
-                Text("For dishes without meat, we recommend:\n\n")
+                //Text("For dishes without meat, we recommend:\n\n")
+                let recommendTitle = UIImage(named: "recommendDishes")
+                if let recommendTitle = UIImage(named: "recommendDishes")
+                {
+                    Image(uiImage: recommendTitle)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 107, height: 107)
+                    .position(x: 14 + 107/2, y: 107/2)
+                }
             }
             
             if rstrTxt.caseInsensitiveCompare("gluten") == .orderedSame {
@@ -133,8 +154,11 @@ struct apiCall: View {
                         }
                     }
                     
+                    isLoading = false
+                    
                 case .failure(let error):
                     print("Error: \(error)")
+                    isLoading = false
                 }
             }
         }
