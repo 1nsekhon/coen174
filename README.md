@@ -15,9 +15,15 @@ Swift (5)
 The Allergen Detector project consists of several branches in the repository. Each branch serves a different purpose. Here is a description of the available branches:
 
 main: Contains the functional code for our app, without any custom UI
+
+
 Vision: Contains the SwiftUI code for an alternative version of the iOS app that takes a photo upload input and scans text from the uploaded image, home to 10 of our unit tests.
+
+
 uiintegration1: Contains our final working app with UI integrated
-Building and Running the iOS App
+
+
+# Building and Running the iOS App
 To build and run the iOS app, follow these steps:
 
 Clone the repository to your local machine:
