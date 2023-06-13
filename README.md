@@ -14,10 +14,9 @@ Swift (5)
 # Repository Branches
 The Allergen Detector project consists of several branches in the repository. Each branch serves a different purpose. Here is a description of the available branches:
 
-main: Contains the SwiftUI code for the iOS app that scans text using the user's camera and exports it to a text file. It also includes the Python script that interacts with ChatGPT and generates a data frame.
-Vision: Contains the SwiftUI code for an alternative version of the iOS app that takes a photo upload input and scans text from the uploaded image.
-xcode-megan: Contains the SwiftUI code for an iOS app that uses the device's camera to scan text in real-time and display it on the screen. The scanned text is then sent to a text file.
-backend: Contains the Python script responsible for feeding queries to ChatGPT and generating a data frame as output.
+main: Contains the functional code for our app, without any custom UI
+Vision: Contains the SwiftUI code for an alternative version of the iOS app that takes a photo upload input and scans text from the uploaded image, home to 10 of our unit tests.
+uiintegration1: Contains our final working app with UI integrated
 Building and Running the iOS App
 To build and run the iOS app, follow these steps:
 
