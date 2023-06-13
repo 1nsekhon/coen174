@@ -5,7 +5,7 @@
 //  Created by Megan Wiser on 5/17/23.
 //
 
-import SwiftUI
+/*import SwiftUI
 import Alamofire
 import Foundation
 
@@ -67,47 +67,22 @@ struct responseItem: Decodable {
 
 struct apiCall: View {
     @State private var str = ""
-    @State private var isLoading = true
     
     var body: some View {
-            VStack {
-                        if (isLoading == true) {
-                            ZStack {
-                                //ProgressView()
-                                    //.progressViewStyle(CircularProgressViewStyle())
-                                    
-                                Image("analyzing")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                                    .edgesIgnoringSafeArea(.all)
-                            }
-                        }
-            
-            let title = UIImage(named: "recommendDishes")
-            if let title = UIImage(named: "ic-Iinstructions1") {
-                Image(uiImage: title)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 383.42, height: 70) // Match the Figma width and height
-                    .position(x: -39+383.42/2,y: 111 + 70 / 2)
-                    //.position(x: -39 + 383.42 / 2, y: 111 + 70 / 2) // Match the Figma position (x, y)
+        VStack {
+            if rstrTxt.caseInsensitiveCompare("meat") == .orderedSame {
+                Text("For dishes without meat, we recommend:\n\n")
             }
             
-                ZStack {
-                    VStack(spacing: 2){
-                        Text(str)
-                        .font(.custom("Inter Regular", size: 20))
-                        .foregroundColor(Color(#colorLiteral(red: 0.47, green: 0.47, blue: 0.47, alpha: 1)))
-                        Spacer()
-
-                    }
-                                        //.padding(.top)
-                    /*.background(
-                        RoundedRectangle(cornerRadius: 30)
-                            .fill(Color(#colorLiteral(red: 1, green: 0.8862499594688416, blue: 0.8374999761581421, alpha: 1)))
-                            .frame(width: 349, height: 500)
-                        )*/
+            if rstrTxt.caseInsensitiveCompare("gluten") == .orderedSame {
+                Text("For dishes without gluten, we recommend:\n\n")
             }
+            
+            if rstrTxt.caseInsensitiveCompare("fruit") == .orderedSame {
+                Text("For dishes without fruit, we recommend:\n\n")
+            }
+            
+            Text(str)
         }
         .onAppear {
             sendOpenAIRequest(prompt: question) { result in
@@ -154,18 +129,15 @@ struct apiCall: View {
                     
                     if counting == menuItems.count {
                         if str.caseInsensitiveCompare("") == .orderedSame {
-                                str = "No Safe Menu Items Found :("
-                            
+                            str = "No Safe Menu Items Found :("
                         }
                     }
                     
-                    isLoading = false
-                    
                 case .failure(let error):
                     print("Error: \(error)")
-                    isLoading = false
                 }
             }
         }
     }
-}
+}*/
+

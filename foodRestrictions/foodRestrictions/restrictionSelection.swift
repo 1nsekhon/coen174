@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct restrictionSelection: View {
-    @State private var rstrTxt = ""
+    //@State private var rstrTxt = ""
     
     @EnvironmentObject var vm: AppViewModel
 
