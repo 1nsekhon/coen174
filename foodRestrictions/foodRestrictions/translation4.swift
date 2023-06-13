@@ -96,11 +96,29 @@ struct apiCall: View {
             }
             
             if rstrTxt.caseInsensitiveCompare("gluten") == .orderedSame {
-                Text("For dishes without gluten, we recommend:\n\n")
+                //Text("For dishes without gluten, we recommend:\n\n")
+                let recommendTitle = UIImage(named: "recommendDishes")
+                if let recommendTitle = UIImage(named: "recommendDishes")
+                {
+                    Image(uiImage: recommendTitle)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 107, height: 107)
+                    .position(x: 14 + 107/2, y: 107/2)
+                }
             }
             
             if rstrTxt.caseInsensitiveCompare("fruit") == .orderedSame {
-                Text("For dishes without fruit, we recommend:\n\n")
+                //Text("For dishes without fruit, we recommend:\n\n")
+                let recommendTitle = UIImage(named: "recommendDishes")
+                if let recommendTitle = UIImage(named: "recommendDishes")
+                {
+                    Image(uiImage: recommendTitle)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 107, height: 107)
+                    .position(x: 14 + 107/2, y: 107/2)
+                }
             }
             
             Text(str)
@@ -128,25 +146,32 @@ struct apiCall: View {
                     
                     for item in menuItems {
                         if rstrTxt.caseInsensitiveCompare("meat") == .orderedSame {
-                            if item.containsMeat.caseInsensitiveCompare("no") == .orderedSame {
-                                str = str + item.foodItem + "\n\n"
-                            }
-                        }
+                            if item.containsGluten.caseInsensitiveCompare("no") == .orderedSame {
+                                                                let label = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 50))
+                                                                label.text = "str = str + item.foodItem " + "\n\n"
+                                                                // Add the label to your view hierarchy
+                                                                counting += 1
+                                                            }                                                }
                         
                         if rstrTxt.caseInsensitiveCompare("gluten") == .orderedSame {
                             if item.containsGluten.caseInsensitiveCompare("no") == .orderedSame {
-                                str = str + item.foodItem + "\n\n"
-                            }
-                        }
+                                                                let label = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 50))
+                                                                label.text = "str = str + item.foodItem " + "\n\n"
+                                                                // Add the label to your view hierarchy
+                                                                counting += 1
+                                                            }
+                                                }
+
                         
                         if rstrTxt.caseInsensitiveCompare("fruit") == .orderedSame {
                             if item.containsFruit.caseInsensitiveCompare("no") == .orderedSame {
-                                str = str + item.foodItem + "\n\n"
-                            }
-                        }
-                        
-                        counting = counting + 1
-                    }
+                                                                let label = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 50))
+                                                                label.text = "str = str + item.foodItem " + "\n\n"
+                                                                // Add the label to your view hierarchy
+                                                                counting += 1
+                                                            }
+                                                }
+                                            }
                     
                     if counting == menuItems.count {
                         if str.caseInsensitiveCompare("") == .orderedSame {
@@ -155,6 +180,7 @@ struct apiCall: View {
                     }
                     
                     isLoading = false
+                    
                     
                 case .failure(let error):
                     print("Error: \(error)")

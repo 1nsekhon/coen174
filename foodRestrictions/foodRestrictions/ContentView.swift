@@ -25,84 +25,14 @@ struct ContentView: View {
     
     private var mainView: some View {
         VStack {
-            /*HStack {
-                ZStack {
-                    let noFruit = UIImage(named: "ic-nofruitoption")
-                
-                    
-                    NavigationLink(destination: ContentView().environmentObject(vm)) {
-                        if let noFruit = UIImage(named: "ic-nofruitoption") {
-                        Image(uiImage: noFruit)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 107, height: 107)
-                        .position(x: 14 + 107/2, y: 107/2)
-                        }
-                    }
-                    .simultaneousGesture(TapGesture().onEnded {
-                        rstrTxt = "fruit"
-                        print(rstrTxt)
-                    })
-                    .frame(width: 107, height: 107)
-                    .position(x:  20 + 107/2, y: 107/2)
-                    
-                }
-                
-                ZStack {
-                    let noMeat = UIImage(named: "ic-nomeatoption")
-                    
-                    NavigationLink(destination: ContentView().environmentObject(vm)) {
-                        if let noMeat = UIImage(named: "ic-nomeatoption") {
-                            Image(uiImage: noMeat)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 107, height: 107)
-                                .position(x: 142/2, y: 79/2)
-                        }
-                        
-                    }
-                    .simultaneousGesture(TapGesture().onEnded {
-                        rstrTxt = "meat"
-                        print(rstrTxt)
-                    })
-                    .frame(width: 107, height: 107)
-                    .position(x: 142/2, y: 79/2)
-                    
-                }
-                
-                ZStack {
-                    let noGluten = UIImage(named: "ic-noglutenoption")
-
-                    NavigationLink(destination: ContentView().environmentObject(vm)) {
-                        if let noGluten = UIImage(named: "ic-noglutenoption") {
-                            Image(uiImage: noGluten)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 107, height: 107)
-                                .position(x: 263/2, y: 79/2)
-                        }
-                        
-                    }
-                    .simultaneousGesture(TapGesture().onEnded {
-                        rstrTxt = "gluten"
-                        print(rstrTxt)
-                    })
-                    .frame(width: 107, height: 107)
-                    .position(x: 263/2, y: 79/2)
-                }
-            }*/
+            DataScannerView(recognizedItems: $vm.recognizedItems, recognizedDataType: vm.recognizedDataType, recognizesMultipleItems: vm.recognizesMultipleItems)
+                    .padding(.top, 50) // Adjust the top padding value as needed to lower the view
+                    .background(
+                        RoundedRectangle(cornerRadius: 20) // Adjust the corner radius as needed
+                            .foregroundColor(.gray)
+                    )
             
-            DataScannerView(recognizedItems: $vm.recognizedItems,
-                            recognizedDataType: vm.recognizedDataType,
-                            recognizesMultipleItems: vm.recognizesMultipleItems)
-            .frame(width: 349, height: 446)
-            .background { Color.black }
-            .position(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height / 2 + 50)
-            .ignoresSafeArea()
-            .id(vm.dataScannerViewId)
-            
-            
-        return VStack {
+            VStack {
                 headerView
                 ScrollView {
                     LazyVStack(alignment: .leading, spacing: 16) {
@@ -121,26 +51,18 @@ struct ContentView: View {
                     }
                     .padding()
                 }
-            let done = UIImage(named: "ic-done")
-            NavigationLink(destination: apiCall()) {
-                if let done = UIImage(named: "ic-done") {
-                Image(uiImage: done)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 185.51, height: 59)
-                .position(x: 101 + 185.51/2, y: 600/2)
-                }
-            }.simultaneousGesture(TapGesture().onEnded {
-                condenseString(items: vm.recognizedItems)
-            })
                 
-                /*Export to txt file here
+                //Export to txt file here
                 NavigationLink(destination: apiCall()) {
-                    Text("Accept Scan")
+                    let done = UIImage(named: "doneSelect")
+                    if let done = UIImage(named: "doneSelect") {
+                        Image(uiImage: done)
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 200, height: 200)
+                    }
                 }.simultaneousGesture(TapGesture().onEnded {
                     condenseString(items: vm.recognizedItems)
                 })
-                 */
             }
         }
         
