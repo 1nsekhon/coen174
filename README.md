@@ -20,7 +20,7 @@ main: Contains the functional code for our app, without any custom UI
 Vision: Contains the SwiftUI code for an alternative version of the iOS app that takes a photo upload input and scans text from the uploaded image, home to 10 of our unit tests.
 
 
-uiintegration1: Contains our final working app with UI integrated
+UIIntegration1: Contains our final working app with our custom UI integrated. This is the branch that we demoed on June 13th.
 
 
 # Building and Running the iOS App
