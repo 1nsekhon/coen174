@@ -70,58 +70,40 @@ struct apiCall: View {
     @State private var isLoading = true
     
     var body: some View {
-        VStack {
-            if (isLoading == true) {
-                ZStack {
-                    //ProgressView()
-                        //.progressViewStyle(CircularProgressViewStyle())
-                        
-                    Image("analyzing")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .edgesIgnoringSafeArea(.all)
-                }
-            }
-            if rstrTxt.caseInsensitiveCompare("meat") == .orderedSame {
-                //Text("For dishes without meat, we recommend:\n\n")
-                let recommendTitle = UIImage(named: "recommendDishes")
-                if let recommendTitle = UIImage(named: "recommendDishes")
-                {
-                    Image(uiImage: recommendTitle)
+            VStack {
+                        if (isLoading == true) {
+                            ZStack {
+                                //ProgressView()
+                                    //.progressViewStyle(CircularProgressViewStyle())
+                                    
+                                Image("analyzing")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .edgesIgnoringSafeArea(.all)
+                            }
+                        }
+            
+            let title = UIImage(named: "recommendDishes")
+            if let title = UIImage(named: "ic-Iinstructions") {
+                Image(uiImage: title)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 107, height: 107)
-                    .position(x: 14 + 107/2, y: 107/2)
-                }
+                    .frame(width: 383.42, height: 70) // Match the Figma width and height
+                    .position(x: -39+383.42/2,y: 111 + 70 / 2)
+                    //.position(x: -39 + 383.42 / 2, y: 111 + 70 / 2) // Match the Figma position (x, y)
             }
             
-            if rstrTxt.caseInsensitiveCompare("gluten") == .orderedSame {
-                //Text("For dishes without gluten, we recommend:\n\n")
-                let recommendTitle = UIImage(named: "recommendDishes")
-                if let recommendTitle = UIImage(named: "recommendDishes")
-                {
-                    Image(uiImage: recommendTitle)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 107, height: 107)
-                    .position(x: 14 + 107/2, y: 107/2)
-                }
+            ZStack {
+                Text(str)
+                    .font(.custom("Inter Regular", size: 20))
+                    .foregroundColor(Color(#colorLiteral(red: 0.47, green: 0.47, blue: 0.47, alpha: 1)))
+                    //.padding(.top, 20)
+                    /*.background(
+                        RoundedRectangle(cornerRadius: 30)
+                            .fill(Color(#colorLiteral(red: 1, green: 0.8862499594688416, blue: 0.8374999761581421, alpha: 1)))
+                            .frame(width: 349, height: 131)
+                        )*/
             }
-            
-            if rstrTxt.caseInsensitiveCompare("fruit") == .orderedSame {
-                //Text("For dishes without fruit, we recommend:\n\n")
-                let recommendTitle = UIImage(named: "recommendDishes")
-                if let recommendTitle = UIImage(named: "recommendDishes")
-                {
-                    Image(uiImage: recommendTitle)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 107, height: 107)
-                    .position(x: 14 + 107/2, y: 107/2)
-                }
-            }
-            
-            Text(str)
         }
         .onAppear {
             sendOpenAIRequest(prompt: question) { result in
@@ -146,41 +128,34 @@ struct apiCall: View {
                     
                     for item in menuItems {
                         if rstrTxt.caseInsensitiveCompare("meat") == .orderedSame {
-                            if item.containsGluten.caseInsensitiveCompare("no") == .orderedSame {
-                                                                let label = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 50))
-                                                                label.text = "str = str + item.foodItem " + "\n\n"
-                                                                // Add the label to your view hierarchy
-                                                                counting += 1
-                                                            }                                                }
+                            if item.containsMeat.caseInsensitiveCompare("no") == .orderedSame {
+                                str = str + item.foodItem + "\n\n"
+                            }
+                        }
                         
                         if rstrTxt.caseInsensitiveCompare("gluten") == .orderedSame {
                             if item.containsGluten.caseInsensitiveCompare("no") == .orderedSame {
-                                                                let label = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 50))
-                                                                label.text = "str = str + item.foodItem " + "\n\n"
-                                                                // Add the label to your view hierarchy
-                                                                counting += 1
-                                                            }
-                                                }
-
+                                str = str + item.foodItem + "\n\n"
+                            }
+                        }
                         
                         if rstrTxt.caseInsensitiveCompare("fruit") == .orderedSame {
                             if item.containsFruit.caseInsensitiveCompare("no") == .orderedSame {
-                                                                let label = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 50))
-                                                                label.text = "str = str + item.foodItem " + "\n\n"
-                                                                // Add the label to your view hierarchy
-                                                                counting += 1
-                                                            }
-                                                }
-                                            }
+                                str = str + item.foodItem + "\n\n"
+                            }
+                        }
+                        
+                        counting = counting + 1
+                    }
                     
                     if counting == menuItems.count {
                         if str.caseInsensitiveCompare("") == .orderedSame {
-                            str = "No Safe Menu Items Found :("
+                                str = "No Safe Menu Items Found :("
+                            
                         }
                     }
                     
                     isLoading = false
-                    
                     
                 case .failure(let error):
                     print("Error: \(error)")
@@ -190,4 +165,3 @@ struct apiCall: View {
         }
     }
 }
-
