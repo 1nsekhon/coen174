@@ -20,7 +20,7 @@ struct ContentView: View {
     ]
     
     var body: some View {
-        mainView
+        mainView.background(Color.white)
     }
     
     private var mainView: some View {

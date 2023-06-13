@@ -50,7 +50,7 @@ struct restrictionSelection: View {
                                 print(rstrTxt)
                             })
                             .frame(width: 107, height: 107)
-                            .position(x: 20 + 107/2, y: 107/2)
+                            .position(x: 105/2, y: 107/2)
                             
                         }
                         
@@ -63,7 +63,7 @@ struct restrictionSelection: View {
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
                                         .frame(width: 107, height: 107)
-                                        .position(x: 20 + 107/2, y: 107/2)
+                                        .position(x: 14 + 107/2, y: 107/2)
                                 }
                                 
                             }
@@ -72,7 +72,7 @@ struct restrictionSelection: View {
                                 print(rstrTxt)
                             })
                             .frame(width: 107, height: 107)
-                            .position(x: 14 + 107/2, y: 107/2)
+                            .position(x: 100/2, y: 107/2)
                             
                         }
                         
@@ -94,7 +94,7 @@ struct restrictionSelection: View {
                                 print(rstrTxt)
                             })
                             .frame(width: 107, height: 107)
-                            .position(x: 14 + 107/2, y: 107/2)
+                            .position(x: 100/2, y: 107/2)
                         }
                     }
                 }
